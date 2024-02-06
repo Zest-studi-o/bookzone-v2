@@ -83,8 +83,7 @@ Project goals:
 |                                       |6A| As a logged-in admin member, I want to see the restaurant's upcoming bookings for the current day sorted by time|
 |                                       |6B| As a logged-in admin member, I want to be able to filter bookings by date|
 |**CONTACT**                            |  ||
-|                                       |7A| As a user, I want to see the restaurant's opening and closing hours|
-|                                       |7B| As a user, I want to see location information on the website|
+|                                       |7A| As a user, I want to see location information on the website|
 |                                       |7C| As a user, I want to see contact information on the website|
 
 ---
