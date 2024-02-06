@@ -1,110 +1,361 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# BOOKZONE
 
-Welcome USER_NAME,
+![Bookzone](docs/readme/project-mockup.jpg)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+A web application that enables users to sell, and buy second-hand books.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Visit the live site: [Bookzone]()
 
-## Gitpod Reminders
+# Table of contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- [User Experience (UX)](#User-Experience-UX)
+  - [User Stories](#User-Stories)
 
-`python3 -m http.server`
+- [Agile Metodology](#Agile-metodology)
 
-A blue button should appear to click: _Make Public_,
+- [Design](#Design)
 
-Another blue button should appear to click: _Open Browser_.
+  - [Flowchart](#Flowchart)
+  - [Database Schema](#Database-Schema)
+  - [Colour Palette](#Colour-Palette)
+  - [Typography](#Typography)
+  - [Imagery](#Imagery)
+  - [Wireframes](#Wireframes)
+  - [Features](#Features)
+  
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- [Technologies Used](#Technologies-Used)
 
-A blue button should appear to click: _Make Public_,
+  - [Languages Used](#languages-used)
+  - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
-Another blue button should appear to click: _Open Browser_.
+- [Deployment & Local Development](#Deployment--Local-Development)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  - [Deployment](#Deployment)
+  - [Local Development](#Local-Development)
+    - [How to Fork](#How-to-Fork)
+    - [How to Clone](#How-to-Clone)
 
-To log into the Heroku toolbelt CLI:
+- [Testing](#Testing)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- [Credits](#Credits)
+  - [Code Used](#code-used)
+  - [Content](#content)
+  - [Media](#media)
+  - [Acknowledgments](#Acknowledgments)
 
 ---
 
-Happy coding!
+## User Experience (UX)
+
+#### Key information for the site
+
+This section provides insight into the UX process, with a focus on the people who this restaurant booking system has been created for, the main aims of the project and how it can help users to meet their needs.
+
+Project goals:
+
+- To encourage people to sell and buy second-hand books by using the application.
+
+- To provide an easy and user-friendly web app where users can buy and sell books and know more.
+
+- To provide a system where the product owner can manage books and interact with customers.
+
+### User Stories
+
+|   EPIC                                |ID|                                User Story                                                   |
+| :-------------------------------------|--|:------------------------------------------------------------------------------------------- |
+|**CONTENT AND NAVIGATION**             |  ||
+|                                       |1A| As a user, I want to easily access all the content in the shop |             
+|                                       |1B| As a user, I want to see relevant information about the books|
+|                                       |1C| As a user, I want the website to have a nice and intuitive design that will match the shops's theme|
+|**USER REGISTRATION/AUTENTHICATION**   |  || 
+|                                       |2A| As a user, I want to be able to register on the website|
+|                                       |2B| As a user, I want to be able to authenticate using only email and password|
+|                                       |2C| As a user, I want to be able to log out at any time|
+|**BOOKS**                            |  ||
+|                                       |3A| As a logged-in user, I want to be able to find the available books to buy and list any books I have to sell|
+|                                       |3B| As a logged-in user, I want to be able to select the book I want to buy or sell|                                  
+|**USER PROFILE**                       |  ||
+|                                       |5A| As a logged-in user, I want to view a list of my upcoming bookings|
+|                                       |5B| As a logged-in user, I want to be able to edit my bookings|
+|                                       |5C| As a logged-in user, I want to be able to delete my bookings|
+|**ADMIN MANAGE BOOKS**              |  ||
+|                                       |6A| As a logged-in admin member, I want to see the restaurant's upcoming bookings for the current day sorted by time|
+|                                       |6B| As a logged-in admin member, I want to be able to filter bookings by date|
+|**CONTACT**                            |  ||
+|                                       |7A| As a user, I want to see the restaurant's opening and closing hours|
+|                                       |7B| As a user, I want to see location information on the website|
+|                                       |7C| As a user, I want to see contact information on the website|
+
+---
+
+## Agile Metodology
+
+The MoSCow method was used with accompanying custom Github project labels to help me to prioritise the important tasks.
+
+![Github user stories](docs/readme/user-stories.jpg)
+
+### MoSCoW Prioritization
+I've decomposed my Epics into stories prior to prioritizing and implementing them. Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+
+- **Must Have:** guaranteed to be delivered (max 60% of stories)
+- **Should Have:** adds significant value, but not vital (the rest ~20% of stories)
+- **Could Have:** has small impact if left out (20% of stories)
+- **Won't Have:** not a priority for this iteration
+
+---
+
+## Design
+
+### Flowchart
+
+![Flowchart](docs/readme/P04-flowchart.jpeg)
+
+### Database Schema
+The database schema shows the structure of the database, the type and their relationship. This schema was done using 
+[Lucid Chart](https://www.lucidchart.com/)
+
+![Database Schema](docs/readme/P04-database-schema.jpg)
+
+### Colour Palette
+blabla
+
+![Colour palette](docs/readme/colour-palette.png)
+
+### Typography
+For the logo I have used Family Dancing which is a script typeface and looks elegant which matches the rest of the visual identity.
+This font was used in some headings such as the homepage in order to embellish it and then for the body copy a readable sans serif, optimal for web design such as Roboto. This last one is also used in the form headings as it is easier to read.
+The fonts were taken from Google Fonts:
+
+- [Roboto](https://fonts.google.com/specimen/Roboto)
+- [Dancing Script](https://fonts.google.com/specimen/Dancing+Script)
+
+### Imagery
+
+The images are taken from the royalty-free sites credited [here](#Credits).
+
+### Wireframes
+
+Wireframes for desktop, tablet and mobile versions are as follows:
+
+- Home 
+![Home]()
+
+
+### Features
+
+#### Existing Features
+
+**Logo**
+
+- The website visual identity.
+
+![Logo](docs/readme/features/logo.png)
+
+**Nav Bar**
+
+- All pages include a navigation bar
+
+![Nav Bar](docs/readme/features/nav-bar.jpg)
+
+**Footer**
+
+- All pages include a footer with social media links
+
+![Footer](docs/readme/features/footer.jpg)
+
+**Hero Imange**
+
+- The home page includes a hero image.
+
+![Hero](docs/readme/features/hero-image.jpg)
+
+**About Us**
+
+- The home page includes an about us section where the areas available are presented to the user.
+
+![About us](docs/readme/features/about-the-venue.jpg)
+
+**Events**
+
+- The home page includes a an events section where upcoming events are advertised.
+
+![Events description](docs/readme/features/events.jpg)
+![Upcoming Events](docs/readme/features/upcoming-events.jpg)
+
+**Menu Page**
+
+- The menu page displays the restaurant menu items.
+
+![About Us](docs/readme/features/menu.jpg)
+
+**Make a booking**
+
+- A booking can be created from this page.
+
+![Create a booking](docs/readme/features/new-booking.jpg)
+
+**Booking list**
+
+- A list of the bookings is displayed on this page.
+
+![Booking List](docs/readme/features/bookings.jpg)
+
+**Edit bookings**
+
+- The user can edit their bookings.
+
+![Edit bookings](docs/readme/features/edit-booking.jpg)
+
+**Delete bookings**
+
+- The user can delete their bookings.
+
+![Delete bookings](docs/readme/features/delete-button.jpg)
+
+**Confirmation message**
+
+- A confirmation message is displayed before deleting a booking.
+
+![Success message](docs/readme/features/confirm-delete.jpg)
+
+**User Feedback**
+
+- The user receives feedback providing messages with relevant information such as their logged in status or booking success as in the example bellow:
+
+![User feedback](docs/readme/features/success.jpg)
+
+---
+
+### Features Left to Implement
+
+In the future, I would like to:
+
+- Add a barcode scanner that can read the book iban and add it to the database.
+
+---
+
+## Technologies Used
+
+### Languages Used
+
+The language used is Python
+
+### Frameworks, Libraries & Programs Used
+
+[Lucid chart](https://www.lucidchart.com/pages/) - Used to create flowcharts.
+
+[Git](https://git-scm.com/) - For version control.
+
+[GitHub](https://github.com/) - To save and store the files for the website.
+
+[Shields](https://shields.io/) - To add badges to the readme file.
+
+[Amiresponsive](https://ui.dev/amiresponsive) - To generate a mockup in different screen sizes.
+
+[Windows photo feature](https://www.microsoft.com/en-us/windows/photo-movie-editor) - To trim screen recording.
+
+[Veed](https://www.veed.io/convert/mp4-to-gif?gad=1&gclid=CjwKCAjwgqejBhBAEiwAuWHioCzHSc5XTTdsnixrxavlvLKEi4i_YeN__Xol0nANQCBhw60caeyF3RoC31wQAvD_BwE) - To convert mp4 to gif
+
+[Heroku](https://id.heroku.com/) - To deploy the App.
+
+[Code Institute template](https://github.com/Code-Institute-Org/p3-template) - To run the game in the terminal using Heroku.
+
+[Django](https://www.djangoproject.com/) - Web Framework.
+
+[Elephantsql](https://www.elephantsql.com/) - PostgreSQL as a Service.
+
+[Cloudinary](https://cloudinary.com/) - For storing static data
+
+## Deployment & Local Development
+
+### Deployment
+
+- This site was deployed by completing the following steps:
+
+####  Django
+In order to protect the django app secret key it was set as environment variable and stored in env.py file
+
+####  Heroku
+1. Log in to [Heroku](https://id.heroku.com) or create an account
+2. Click “New”
+3. Click “Create new app”
+4. Give your app a name and select the region closest to you. When you’re done, click “Create app” to confirm
+5. Open the Settings tab and add the config vars
+
+####  ElephantSQL
+1. Log in to [ElephantSQL](https://www.elephantsql.com/) or create an account
+2. Click “Create New Instance”
+3. Set up your plan
+ - Give your plan a Name (this is commonly the name of the project)
+ - Select the Tiny Turtle (Free) plan
+ - You can leave the Tags field blank
+4. Select “Select Region”
+5. Select a data center near you
+6. Then click “Review”
+7. Check your details are correct and then click “Create instance”
+8. Return to the ElephantSQL dashboard and click on the database instance name for this project
+9. In the URL section, click the copy icon to copy the database URL
+10. Paste this URL into env.py file as DATABASE_URL value and save the file.
+
+
+####  Cloudinary
+1. Log in to [Cloudinary](https://cloudinary.com/) or create an account
+2. Navigate to dashboard/console https://console.cloudinary.com/console/ and copy API Enviroment variable starting with "cloudinary://".
+3. Paste copied url into env.py file as CLOUDINARY_URL value and save the file.
+
+
+### Local Development
+
+#### How to Fork
+
+To fork the Zest-studi-o/P05-BookZone repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, Zest-studi-o/p04-restaurant-booking.
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the Zest-studi-o/P05-BookZone repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, Zest-studi-o/P05-BookZone.
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+---
+
+## Testing
+
+Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
+
+## Credits
+
+### Code Used
+
+- Other students examples help me to understand the structure of a restaurant booking system app, how to link user stories to epics & what is expected for the README.md such as [project](projecturl)
+
+- [Code Institue](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm) walkthought tutorials "Hello Django" & "I think therefore I blog".
+
+- [Stack overflow](https://stackoverflow.com/) helped me to troubleshoot many of the issues encountered.
+
+- I also researched on [W3 Schools](https://www.w3schools.com/) & [Django Documentation](https://docs.djangoproject.com/en/4.2/).
+
+### Content
+
+- I used [abc](habc) for menu items content.
+
+
+### Media
+
+I took from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.com/) the following images:
+
+- [Image](image url)
+
+
+### Acknowledgments
+
+- My Code Institute Mentor.
+- Tutor support at Code Institute.
