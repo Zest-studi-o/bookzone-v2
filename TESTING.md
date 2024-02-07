@@ -97,8 +97,6 @@ I used [W3 Html Validator](https://validator.w3.org/) to test all html pages and
 * **Summary:**<br>
     -When a user visits the website he can easily see the navigation menu at the top of the page;<br>
     -Even if switching the pages, the menu is always present at the top and indicates what page is currently active;<br>
-    -For the *Home* page, a *Back to top* button is present at the end of the content,(considering screen sizes can vary depending on device used) and redirects the user to the top of the page where he can access the navigation links;<br>
-    -For logged-in clients, the menu contains an additional page, *Booking*, and *Logout* link replaces *Register* and *Login* pages;<br>
        *By testing all these features, it can be affirmed that the user story is accomplished.*<br>
 * **Outcome:** Pass or Fail
 
@@ -120,7 +118,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     -The colours of the website were tested to match the contrast requirements and all the colours chosen were generated from the colours' palette of the background cover<br>
     -Throughout the site there are elements created to help the user have a better experience when when navigating through the content<br>
     -On the Home suggest to the user to Register or Login to enjoy all the features of the website;<br>
-    -The user gets button popup every time he performs an action such as Registering, Signing In/Signing Out, adding a booking<br><br>
+    -The user gets button popup every time he performs an action such as Registering, Signing In/Signing Out<br><br>
 
     
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br>
@@ -161,7 +159,7 @@ By testing all these features, it can be affirmed that the user story is accompl
 #### 3A: As a logged-in user, I want to be able to find the available books to buy and list any books I have to sell
 * **Acceptance Criteria:** A logged user should be provided with a clear list of items  
 * **Summary:**<br> 
-    -There is a books page that can be accessed only by authenticated users, considering that all the booking entries must have the current user as the author;<br>
+    -There is a books page that can be accessed only by authenticated users, considering that all the entries must have the current user as the author;<br>
     -The books sections appear successive only after the previous ones are validated;<br>
     -The first section contains inputs for details, for the user to fill in;<br>
     -The validation of these values is very strict to prevent errors when generating the tables section. The following rules are being checked:
@@ -169,7 +167,7 @@ By testing all these features, it can be affirmed that the user story is accompl
     * The Date value should not be less than the current day;<br>
     * The user must choose from the available time slots provided. <br>
 
-    - If the validation is complete, and the user submits the form, a successful feedback in a form of a button message is provided; But if there's no available table for the capacity required a message feedback is also given and the guest cannot proceed with the booking.<br>
+    - If the validation is complete, and the user submits the form, a successful feedback in a form of a button message is provided<br>
 
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
 * **Outcome:** Pass or Fail
@@ -238,7 +236,7 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 |  | The website displays an appropriate message if link is invalid or token expired | Pass |
 |  | User is signed in automatically when click confirm button | Pass |
 | Admin Panel | Admin can login to admin panel. | Pass |
-|  | Admin can add, edit and delete bookings. | Pass |
+|  | Admin can add, edit and delete books. | Pass |
 |  | Admin can add edit and delete menu items. | Pass |
 |  | Admin can add and delete guests. | Pass |
 |  | Admin can delete users. | Pass |
@@ -248,14 +246,14 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 |  | A logged-in user can sign out successfully. | Pass |
 |  | The website displays an appropriate error message when a user enters invalid data (e.g., date before current day, not allowed charset). | Pass |
 |  | A user cannot edit or delete another user's profile | Pass |
-|Bookings CRUD | Verify that a logged-in user can create, edit delete his own bookings. | Pass |
+|Books CRUD | Verify that a logged-in user can create, edit delete his own books. | Pass |
 |  | Confirmation message is displayed when changes are saved | Pass |
-|  | User is asked for confirmation before deleting booking| Pass |
-|  | Click on delete confirmation button deletes bookings | Pass  |
-|  | A user can delete own bookings | Pass |
+|  | User is asked for confirmation before deleting books| Pass |
+|  | Click on delete confirmation button deletes books | Pass  |
+|  | A user can delete own books | Pass |
 |  | Only authenticated users can book reservations | Pass |
-|  | Confirmation message is displayed when booking is updated or deleted | Pass |
-|Menu| A logged-in admin can add, edit or delete menu items. | Pass |
+|  | Confirmation message is displayed when a book is updated or deleted | Pass |
+|Menu| A logged-in admin can add, edit or delete books | Pass |
 
 
 ---
@@ -266,7 +264,7 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 | ID  | CLASS | FEATURE/SECTION                 | SUMMARY                                                                                                                                                                                                                            | STEPS TO REPRODUCE                                                                                                                                                                           | ACTUAL RESULT                                                               | EXPECTED RESULT                                 | ACTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | STATUS                          |
 | --- | ----- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| 1   | A     | Django models |Summary  | Steps to reproduce     |Please ensure that bookings are loading correctly| There was a message informing that the models have migrated correctly but when accessing the site this was not working   ![No changes](docs/testing/bugs/1/no-changes.jpg)  Tried to migrate again but when doing this the terminal informed that the migrations where up to date, as the message was saying that the id was not existing but it did, and considering another model was tried before, the server was set to run local, ![Local](docs/testing/bugs/1/local.jpg) and the error was logged to the console,  ![Error log](docs/testing/bugs/1/error_log.jpg)  , Django migrations were removed and the database was reset. After this the migrations were run again successfully and this solved the issue.| FIXED|
+| 1   | A     | Django models |Summary  | Steps to reproduce     |Actual result|Expected Result|What I did to solve the issue| FIXED|
 
 
 ### Known Bugs
