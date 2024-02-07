@@ -157,13 +157,13 @@ By testing all these features, it can be affirmed that the user story is accompl
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
 * **Outcome:** Pass or Fail
 
-### BOOKING
-#### 3A: As a logged in user, I want to be able to book a reservation for a specific date, time and number of table
-* **Acceptance Criteria:** A logged user should be provided a booking system that generates the table  
+### BOOKS
+#### 3A: As a logged-in user, I want to be able to find the available books to buy and list any books I have to sell
+* **Acceptance Criteria:** A logged user should be provided with a clear list of items  
 * **Summary:**<br> 
-    -There is a booking page that can be accessed only by authenticated users, considering that all the booking entries must have the current user as the author;<br>
-    -The booking sections appear successive only after the previous ones are validated;<br>
-    -The first section contains inputs for Date, Start and End time, for the user to fill in;<br>
+    -There is a books page that can be accessed only by authenticated users, considering that all the booking entries must have the current user as the author;<br>
+    -The books sections appear successive only after the previous ones are validated;<br>
+    -The first section contains inputs for details, for the user to fill in;<br>
     -The validation of these values is very strict to prevent errors when generating the tables section. The following rules are being checked:
     * All the fields must be filled.<br>
     * The Date value should not be less than the current day;<br>
@@ -175,19 +175,8 @@ By testing all these features, it can be affirmed that the user story is accompl
 * **Outcome:** Pass or Fail
 
 
-### MENU
-#### 4A: As a user, I want to see the book with details such us image, description, review and price, so that I can be completely aware of everything I want to buy or sell
-* **Acceptance Criteria:** A user should be provided with a list of the books, as essential information.
-* **Summary:**<br>
-    -A list of books is displayed and it is visible to any type of user;<br>
-    -Every book is provided with an image of the book, name, description, review and price;<br>
-    -All images have the same dimensions, with transparent backgrounds, and prices are in bold, for better visual impact.<br><br>
-    
-    *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
-* **Outcome:** Pass or Fail
-
-#### 5B: As a logged in user, I want to be able to edit or delete my books
-* **Acceptance Criteria:** A logged in user should be provided a way to edit or delete a booking if he no longer wishes to keep it. 
+#### 4B: As a logged in user, I want to be able to edit or delete my books
+* **Acceptance Criteria:** A logged in user should be provided a way to edit or delete a book if he no longer wishes to keep it. 
 * **Summary:**<br>
     -In the Book listing page, the user is presented with all the books information.
     -All the field information can be updated via an 'edit' button.
@@ -197,7 +186,7 @@ By testing all these features, it can be affirmed that the user story is accompl
 * **Outcome:** Pass or Fail
 
 ### ADMIN MANAGE BOOKS
-#### 6A: As a logged in admin member, I want to see the listings
+#### 5A: As a logged in admin member, I want to see the listings
 * **Acceptance Criteria:** A logged in admin member should be able to see all the listing from all the users via admin panel   
 * **Summary:**<br>
     -There is a *Manage Books* page with all the boos are visible only for logged-in admin members;<br>
@@ -208,7 +197,7 @@ By testing all these features, it can be affirmed that the user story is accompl
 * **Outcome:** Pass or Fail
 
 ### CONTACT US
-#### 7A: As a user, I want to see the store contact details
+#### 6A: As a user, I want to see the store contact details
 * **Acceptance Criteria:** A site user should be provided information about the store contact details
 * **Summary:**<br>  
     -There is a section called "Where to find us" visible to any type of user;<br>

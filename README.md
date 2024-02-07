@@ -76,15 +76,15 @@ Project goals:
 |                                       |3A| As a logged-in user, I want to be able to find the available books to buy and list any books I have to sell|
 |                                       |3B| As a logged-in user, I want to be able to select the book I want to buy or sell|                                  
 |**USER PROFILE**                       |  ||
-|                                       |5A| As a logged-in user, I want to view a list of my upcoming bookings|
-|                                       |5B| As a logged-in user, I want to be able to edit my bookings|
-|                                       |5C| As a logged-in user, I want to be able to delete my bookings|
+|                                       |4A| As a logged-in user, I want to view a list of my books|
+|                                       |4B| As a logged-in user, I want to be able to edit my books|
+|                                       |4C| As a logged-in user, I want to be able to delete my books|
 |**ADMIN MANAGE BOOKS**              |  ||
-|                                       |6A| As a logged-in admin member, I want to see the restaurant's upcoming bookings for the current day sorted by time|
-|                                       |6B| As a logged-in admin member, I want to be able to filter bookings by date|
+|                                       |5A| As a logged-in admin member, I want to see the the books and store information|
+|                                       |5B| As a logged-in admin member, I want to be able to filter books|
 |**CONTACT**                            |  ||
-|                                       |7A| As a user, I want to see location information on the website|
-|                                       |7C| As a user, I want to see contact information on the website|
+|                                       |6A| As a user, I want to see contact information on the website|
+|                                       
 
 ---
 
