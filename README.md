@@ -76,6 +76,7 @@ Project goals:
 |                                       |3A| As a logged-in user, I want to be able to find the available books to buy and list any books I have to sell|
 |                                       |3B| As a logged-in user, I want to be able to select the book I want to buy or sell|                                  
 |**USER PROFILE**                       |  ||
+|                                       |4A| As a logged-in user, I want to create en entry|
 |                                       |4A| As a logged-in user, I want to view a list of my books|
 |                                       |4B| As a logged-in user, I want to be able to edit my books|
 |                                       |4C| As a logged-in user, I want to be able to delete my books|
@@ -84,7 +85,7 @@ Project goals:
 |                                       |5B| As a logged-in admin member, I want to be able to filter books|
 |**CONTACT**                            |  ||
 |                                       |6A| As a user, I want to see contact information on the website|
-|                                       
+                                      
 
 ---
 
@@ -92,7 +93,7 @@ Project goals:
 
 The MoSCow method was used with accompanying custom Github project labels to help me to prioritise the important tasks.
 
-![Github user stories](docs/readme/user-stories.jpg)
+![Github user stories](docs/readme/user-stories-1.jpg)
 
 ### MoSCoW Prioritization
 I've decomposed my Epics into stories prior to prioritizing and implementing them. Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.

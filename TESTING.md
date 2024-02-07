@@ -164,8 +164,6 @@ By testing all these features, it can be affirmed that the user story is accompl
     -The first section contains inputs for details, for the user to fill in;<br>
     -The validation of these values is very strict to prevent errors when generating the tables section. The following rules are being checked:
     * All the fields must be filled.<br>
-    * The Date value should not be less than the current day;<br>
-    * The user must choose from the available time slots provided. <br>
 
     - If the validation is complete, and the user submits the form, a successful feedback in a form of a button message is provided<br>
 
@@ -173,32 +171,81 @@ By testing all these features, it can be affirmed that the user story is accompl
 * **Outcome:** Pass or Fail
 
 
-#### 4B: As a logged in user, I want to be able to edit or delete my books
+#### 3B: As a logged in user, I want to be able to edit or delete my books
 * **Acceptance Criteria:** A logged in user should be provided a way to edit or delete a book if he no longer wishes to keep it. 
 * **Summary:**<br>
-    -In the Book listing page, the user is presented with all the books information.
-    -All the field information can be updated via an 'edit' button.
-    -Books can also be deleted via a 'delete' button. 
+    -In the Book listing page, the user is presented with all the books information.<br>
+    -All the field information can be updated via an 'edit' button.<br>
+    -Books can also be deleted via a 'delete' button.<br>
 
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
 * **Outcome:** Pass or Fail
+
+### USER PROFILE
+#### 4A: As a logged-in user, I want to create a a list of books to sell or buy
+* **Acceptance Criteria:** A logged in user should be able to create a list of items
+* **Summary:**<br>
+    -A logged user should be able to enter a book<br>
+    -Text should be able to be entered for the book description<br>
+    -An image of the book can be added<br>
+
+#### 4B: As a logged-in user, I want to view a list of my books
+* **Acceptance Criteria:** A logged in user should be able to see a list of items 
+* **Summary:**<br>
+    -A logged user should be provided with a clear list of books<br>
+    -The list should contain no text bleeding issues, corruptions or overlaps<br>
+    -The images should display correctly<br>
+
+    *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
+* **Outcome:** Pass or Fail
+
+#### 4C: As a logged-in user, I want to be able to edit my books
+* **Acceptance Criteria:** A logged in user should be able to edit their books 
+* **Summary:**<br>
+    -A logged can edit books by pressing a button<br>
+    -A confirmation message should be displayed<br>
+    -A success message should be displayed when finishing editing<br>
+
+    *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
+* **Outcome:** Pass or Fail
+
+#### 4D: As a logged-in user, I want to be able to delete my books
+* **Acceptance Criteria:** A logged in user should be able to delete the entries
+* **Summary:**<br>
+    -A logged user can delete the entries by pressing a button<br>
+    -A confirmation message should be displayed<br>
+    -A success message should be displayed when finishing editing<br>
+
+    *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
+* **Outcome:** Pass or Fail
+
 
 ### ADMIN MANAGE BOOKS
 #### 5A: As a logged in admin member, I want to see the listings
 * **Acceptance Criteria:** A logged in admin member should be able to see all the listing from all the users via admin panel   
 * **Summary:**<br>
     -There is a *Manage Books* page with all the boos are visible only for logged-in admin members;<br>
-    -The page displays all the boos for the current sorted;<br>
-    -The books are listed correctly;<br>
+    -The page displays all the books<br>
+    -The books are listed correctly<br>
 
     *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
 * **Outcome:** Pass or Fail
 
-### CONTACT US
+#### 5B: As a logged-in admin member, I want to be able to filter books
+* **Acceptance Criteria:** A logged in admin member should be able to filter books
+* **Summary:**<br>
+    -Filter option is available<br>
+    -The items can be sorted correctly<br>
+    -Different options for filtering<br>
+
+    *By testing all these features, it can be affirmed that the user story is accomplished.*<br> 
+* **Outcome:** Pass or Fail
+
+### CONTACT
 #### 6A: As a user, I want to see the store contact details
 * **Acceptance Criteria:** A site user should be provided information about the store contact details
 * **Summary:**<br>  
-    -There is a section called "Where to find us" visible to any type of user;<br>
+    -There is a section called "Where to find us" visible to any type of user<br>
     -The section displays the relevant information<br>
     -The section has a simple and attractive design and the information is clear.<br><br>
 
