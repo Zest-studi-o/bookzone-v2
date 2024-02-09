@@ -164,50 +164,31 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 ![Footer](docs/readme/features/footer.jpg)
 
-**Hero Imange**
+**Hero Image**
 
 - The home page includes a hero image.
 
 ![Hero](docs/readme/features/hero-image.jpg)
 
-**About Us**
+**Contact**
 
-- The home page includes an about us section where the areas available are presented to the user.
+- The contact details are presented to the user.
 
 ![About us](docs/readme/features/about-the-venue.jpg)
 
-**Events**
-
-- The home page includes a an events section where upcoming events are advertised.
-
-![Events description](docs/readme/features/events.jpg)
-![Upcoming Events](docs/readme/features/upcoming-events.jpg)
-
-**Menu Page**
-
-- The menu page displays the restaurant menu items.
-
-![About Us](docs/readme/features/menu.jpg)
-
-**Make a booking**
-
-- A booking can be created from this page.
-
-![Create a booking](docs/readme/features/new-booking.jpg)
-
-**Booking list**
+**Books list**
 
 - A list of the bookings is displayed on this page.
 
 ![Booking List](docs/readme/features/bookings.jpg)
 
-**Edit bookings**
+**Edit books**
 
 - The user can edit their bookings.
 
 ![Edit bookings](docs/readme/features/edit-booking.jpg)
 
-**Delete bookings**
+**Delete books**
 
 - The user can delete their bookings.
 
@@ -335,7 +316,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Code Used
 
-- Other students examples help me to understand the structure of a restaurant booking system app, how to link user stories to epics & what is expected for the README.md such as [project](projecturl)
+- Other students examples helped me to understand the structure of a restaurant booking system app, how to link user stories to epics & what is expected for the README.md such as [project](projecturl)
 
 - [Code Institue](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm) walkthrough tutorial "Boutique Ado".
 
@@ -345,14 +326,14 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Content
 
-- I used [abc](habc) for menu items content.
+- I used [abc](habc) for x content.
 
 
 ### Media
 
 I took from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.com/) the following images:
 
-- [Image](image url)
+- [BookZone home page background](https://www.freepik.com/free-photo/modern-bookstore-showcasing-rows-vibrant-books_84718526.htm)
 
 
 ### Acknowledgments
