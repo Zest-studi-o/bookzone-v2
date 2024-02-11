@@ -9,6 +9,7 @@ class CustomUser(AbstractUser):
     address = models.TextField(blank=True, null=True)
 
 class Book(models.Model):
+    isbn = models.DecimalField(max_digits=50, decimal_places=2, null=True, blank=True)
     title = models.CharField(max_length=255)
     author = models.CharField(max_length=100)
     description = models.TextField()

@@ -89,6 +89,8 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
+AUTH_USER_MODEL = 'books.CustomUser'
+
 WSGI_APPLICATION = 'bookzone.wsgi.application'
 
 SITE_ID = 1
