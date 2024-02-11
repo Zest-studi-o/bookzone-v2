@@ -9,8 +9,8 @@ class CustomUser(AbstractUser):
     address = models.TextField(blank=True, null=True)
 
 class Book(models.Model):
-    # isbn = models.DecimalField(max_digits=50, decimal_places=2, null=True, blank=True)
-    isbn = models.CharField(max_length=100, null=True, blank=True)
+    sku = models.CharField(max_length=254, null=True, blank=True)
+    isbn = models.CharField(max_length=13, null=True, blank=True) # ISBN are from 10 to 13
     title = models.CharField(max_length=255)
     author = models.CharField(max_length=100)
     description = models.TextField()
@@ -25,6 +25,9 @@ class Book(models.Model):
         return self.title
 
 class Category(models.Model):
+    class Meta:
+        verbose_name_plural = 'Categories'
+    
     name = models.CharField(max_length=100)
     friendly_name = models.CharField(max_length=254,blank=True, null=True )
     description = models.TextField(blank=True, null=True)

@@ -4,7 +4,8 @@
         "pk": 1,
         "model": "books.book",
         "fields": {
-            "isbn": "12345678901234567890123456789012345678901234567890",
+            "sku": "pp234",
+            "isbn": "8901234567890",
             "title": "Example Book 1",
             "author": "John Doe",
             "description": "This is an example book description.",
@@ -21,7 +22,8 @@
         "pk": 2,
         "model": "books.book",
         "fields": {
-            "isbn": "123456789012345678901234567890123456789012345678563",
+            "sku": "pp233",
+            "isbn": "3012345678563",
             "title": "Example Book 2",
             "author": "John Doe 2",
             "description": "This is an example book description.",
