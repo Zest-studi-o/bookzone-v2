@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CustomUser, Book, Category,Transaction, Review
+from .models import CustomUser, Book, Category, Transaction, Review
 
 # Register your models here.
 
