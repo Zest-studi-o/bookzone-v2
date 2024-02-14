@@ -326,7 +326,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Content
 
-- I used [abc](habc) for x content.
+- I used [Chapters](https://chaptersbookstore.com/) for books content including images.
 
 
 ### Media
