@@ -12,7 +12,8 @@
             "category": 1,
             "seller": 1,
             "image": "a-little-life.jpg",
-            "upload_date": "2024-02-12T00:00:00Z"
+            "upload_date": "2024-02-12T00:00:00Z",
+            "rating": 4.6
         }
     },
 
@@ -30,7 +31,8 @@
             "category": 2,
             "seller": 1,
             "image": "the-last-to-disappear.jpg",
-            "upload_date": "2024-02-12T00:00:00Z"
+            "upload_date": "2024-02-12T00:00:00Z",
+            "rating": 4.8
         }
     },
     {
@@ -47,7 +49,8 @@
             "category": 3,
             "seller": 1,
             "image": "fourth-wing.jpg",
-            "upload_date": "2024-02-11T00:00:00Z"
+            "upload_date": "2024-02-11T00:00:00Z",
+            "rating": 2.6
         }
     },
     {
@@ -64,7 +67,8 @@
             "category": 4,
             "seller": 1,
             "image": "the-gardener-almanac.jpg",
-            "upload_date": "2024-02-11T00:00:00Z"
+            "upload_date": "2024-02-11T00:00:00Z",
+            "rating": 4.2
         }
     },
 
@@ -82,7 +86,8 @@
             "category": 5,
             "seller": 1,
             "image": "on-this-day-in-history.jpg",
-            "upload_date": "2024-02-11T00:00:00Z"
+            "upload_date": "2024-02-11T00:00:00Z",
+            "rating": 3.9
         }
     },
 
@@ -100,7 +105,8 @@
             "category": 6,
             "seller": 1,
             "image": "spanish-conversation.jpg",
-            "upload_date": "2024-02-11T00:00:00Z"
+            "upload_date": "2024-02-11T00:00:00Z",
+            "rating": 3.6
         }
     },
 
@@ -118,7 +124,8 @@
             "category": 7,
             "seller": 1,
             "image": "fox-son-tailers.jpg",
-            "upload_date": "2024-02-11T00:00:00Z"
+            "upload_date": "2024-02-11T00:00:00Z",
+            "rating": 4.5
         }
     },
 
@@ -136,7 +143,8 @@
             "category": 8,
             "seller": 1,
             "image": "mirabelle-takes-charge.jpg",
-            "upload_date": "2024-02-11T00:00:00Z"
+            "upload_date": "2024-02-11T00:00:00Z",
+            "rating": 3.1
         }
     },
 
@@ -154,7 +162,8 @@
             "category": 9,
             "seller": 1,
             "image": "i-want-my-hat-back.jpeg",
-            "upload_date": "2024-02-11T00:00:00Z"
+            "upload_date": "2024-02-11T00:00:00Z",
+            "rating": 4.2
         }
     },
 
@@ -172,7 +181,8 @@
             "category": 10,
             "seller": 1,
             "image": "cult-fiction-6-book-mystery-box.webp",
-            "upload_date": "2024-02-11T00:00:00Z"
+            "upload_date": "2024-02-11T00:00:00Z",
+            "rating": 3.2
         }
     },
 
@@ -190,7 +200,8 @@
             "category": 11,
             "seller": 1,
             "image": "mother-s-day-mystery-box.webp",
-            "upload_date": "2024-02-11T00:00:00Z"
+            "upload_date": "2024-02-11T00:00:00Z",
+            "rating": 3.6
         }
     },
 
@@ -209,7 +220,8 @@
             "category": 12,
             "seller": 1,
             "image": "young-adult-fiction-6-book-mystery-box.webp",
-            "upload_date": "2024-02-11T00:00:00Z"
+            "upload_date": "2024-02-11T00:00:00Z",
+            "rating": 4.5
         }
     }
 ]
