@@ -3,7 +3,6 @@
     "model": "books.category",
     "fields": {
         "name": "crime_fiction",
-        "description": "Description 1",
         "friendly_name": "Crime Fiction"
     }
 }, {
@@ -11,7 +10,76 @@
     "model": "books.category",
     "fields": {
         "name": "cult_fiction",
-        "description": "Description 2",
         "friendly_name": "Cult Fiction"
+    }
+}, {
+    "pk": 3,
+    "model": "books.category",
+    "fields": {
+        "name": "science_fiction",
+        "friendly_name": "Science Fiction & Fantasy"
+    }
+}, {
+    "pk": 4,
+    "model": "books.category",
+    "fields": {
+        "name": "gardening",
+        "friendly_name": "Gardening"
+    }
+}, {
+    "pk": 5,
+    "model": "books.category",
+    "fields": {
+        "name": "history",
+        "friendly_name": "History"
+    }
+}, {
+    "pk": 6,
+    "model": "books.category",
+    "fields": {
+        "name": "language",
+        "friendly_name": "Language"
+    }
+}, {
+    "pk": 7,
+    "model": "books.category",
+    "fields": {
+        "name": "picture_books",
+        "friendly_name": "Picture Books"
+    }
+}, {
+    "pk": 8,
+    "model": "books.category",
+    "fields": {
+        "name": "early_reader",
+        "friendly_name": "Early Reader"
+    }
+}, {
+    "pk": 9,
+    "model": "books.category",
+    "fields": {
+        "name": "board_books",
+        "friendly_name": "Board Books"
+    }
+}, {
+    "pk": 10,
+    "model": "books.category",
+    "fields": {
+        "name": "mistery_box_cult_fiction",
+        "friendly_name": "Cult Fiction Mystery Box"
+    }
+}, {
+    "pk": 11,
+    "model": "books.category",
+    "fields": {
+        "name": "mistery_box_mothers_day",
+        "friendly_name": "Books Mother's Day"
+    }
+}, {
+    "pk": 12,
+    "model": "books.category",
+    "fields": {
+        "name": "mistery_box_young_adult",
+        "friendly_name": "Young Adult Fiction 6 Book Mystery Box"
     }
 }]
