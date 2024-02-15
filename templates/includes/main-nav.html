@@ -6,9 +6,9 @@
                 All Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-books-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?sort=rating&direction=asc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'books' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
             </div>
         </li>
@@ -23,6 +23,8 @@
                 <a href="{% url 'books' %}?category=cult_fiction" class="dropdown-item">Cult Fiction</a>
                 <a href="{% url 'books' %}?category=science_fiction" class="dropdown-item">Science Fiction &amp;
                     Fantasy</a>
+                <a href="{% url 'books' %}?category=crime_fiction,cult_fiction,science_fiction"
+                    class="dropdown-item">All Fiction</a>
             </div>
         </li>
 
@@ -35,6 +37,8 @@
                 <a href="{% url 'books' %}?category=gardening" class="dropdown-item">Gardening</a>
                 <a href="{% url 'books' %}?category=history" class="dropdown-item">History</a>
                 <a href="{% url 'books' %}?category=language" class="dropdown-item">Language</a>
+                <a href="{% url 'books' %}?category=gardening,history,language" class="dropdown-item">All Non
+                    Fiction</a>
             </div>
         </li>
 
@@ -43,10 +47,12 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Children's
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="non-fiction-link">
+            <div class="dropdown-menu border-0" aria-labelledby="childrens-link">
                 <a href="{% url 'books' %}?category=picture_books" class="dropdown-item">Picture books</a>
                 <a href="{% url 'books' %}?category=early_reader" class="dropdown-item">Early Reader</a>
                 <a href="{% url 'books' %}?category=board_books" class="dropdown-item">Board books</a>
+                <a href="{% url 'books' %}?category=picture_books,early_reader,board_books" class="dropdown-item">All
+                    Children's</a>
             </div>
         </li>
 
@@ -55,10 +61,12 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mistery Boxes
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="non-fiction-link">
+            <div class="dropdown-menu border-0" aria-labelledby="mistery-boxes-link">
                 <a href="{% url 'books' %}?category=mistery_box_cult_fiction" class="dropdown-item">Cult Fiction Box</a>
                 <a href="{% url 'books' %}?category=mistery_box_mothers_day" class="dropdown-item">Mother's Day Box</a>
                 <a href="{% url 'books' %}?category=mistery_box_young_adult" class="dropdown-item">Young adult Box</a>
+                <a href="{% url 'books' %}?category=mistery_box_cult_fiction,mistery_box_mothers_day,mistery_box_young_adult"
+                    class="dropdown-item">All Mistery Boxes</a>
             </div>
         </li>
     </ul>
