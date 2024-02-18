@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- Add a new book -->
+<div class="overlay"></div>
+<!-- Page heading -->
+<div>
+    <h2 class="main-clr-thm text-center py-2">Books Offer Management</h2>
+</div>
+<!-- Add book page subheading -->
+<div class="row">
+    <div class="col text-center mt-3">
+        <span class="p-2 mt-2 badge badge-white text-black">
+            <h3 class="era-badge-name">
+                <i class="fa-solid fa-hourglass-half"></i>
+                Add a new book
+                <i class="fa-solid fa-hourglass-half"></i>
+            </h3>
+        </span>
+    </div>
+</div>
+<!-- Add new book form -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <form method="POST" action="{% url 'add_book' %}" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="text-right mb-4">
+                    <a class="btn main-clr-thm" href="{% url 'books' %}">Cancel</a>
+                    <button class="btn main-clr-thm" type=" submit">Add Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
