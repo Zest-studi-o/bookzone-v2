@@ -51,29 +51,30 @@
 
                 <!-- Book description -->
                 <p class="mt-3">{{ book.description|linebreaks}}</p>
+
                 <!-- Add to bag options -->
-                <p class="text-muted">Process your order</p>
                 <form class="form" action="{% url 'add_to_bag' book.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
                         <div class="col-12">
-                            <p class="mt-3"><strong>Quantity</strong><i class="fa-solid fa-cart-plus cst-prpl"></i>:</p>
+                            <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
                                 <div class="input-group input-group-{{ book.id }}">
                                     <div class="input-group-prepend">
-                                        <button class="main-clr-thm decrement-qty btn decrement-qty_{{ book.id }}"
-                                            data-item_id="{{ book.id }}" aria-label="Books quantity decrement">
+                                        <button
+                                            class="decrement-qty btn btn-black rounded-0 decrement-qty_{{ book.id }}"
+                                            data-item_id="{{ book.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
                                             </span>
                                         </button>
                                     </div>
                                     <input class="form-control qty_input id_qty_{{ book.id }}" type="number"
-                                        name="quantity" value="1" min="1" max="99" data-item_id="{{ book.id }}"
-                                        aria-label="Books quantity input">
+                                        name="quantity" value="1" min="1" max="99" data-item_id="{{ book.id }}">
                                     <div class="input-group-append">
-                                        <button class="main-clr-thm increment-qty btn increment-qty_{{ book.id }}"
-                                            data-item_id="{{ book.id }}" aria-label="Books quantity increment">
+                                        <button
+                                            class="increment-qty btn btn-black rounded-0 increment-qty_{{ book.id }}"
+                                            data-item_id="{{ book.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
                                             </span>
@@ -82,17 +83,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <input type="submit" class="text-uppercase main-clr-thm btn" value="Add to Shopping Bag">
+
+                        <div class="col{% if s %}-12 mt-2{% endif %}">
+                            <a href="{% url 'books' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                    </div>
-                    <!-- Button to All Books -->
-                    <p class="text-muted mt-2">or</p>
-                    <div class="mt-3">
-                        <a href="{% url 'books' %}" class="text-uppercase main-clr-thm btn">
-                            <i class="fa-solid fa-book-open "></i> Find more books now
-                        </a>
                     </div>
                 </form>
             </div>
