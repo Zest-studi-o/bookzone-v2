@@ -6,8 +6,8 @@ from books.models import Book
 
 
 def view_bag(request):
-    """ 
-    A view that renders the bag contents page 
+    """
+    Renders the bag
     """
 
     return render(request, 'bag/bag.html')
@@ -15,7 +15,7 @@ def view_bag(request):
 
 def add_to_bag(request, item_id):
     """
-    Adds books to the to the bag
+    Adds books to the to shopping bag
     """
 
     book = get_object_or_404(Book, pk=item_id)
@@ -30,7 +30,7 @@ def add_to_bag(request, item_id):
                           f'quantity to {bag[item_id]}'))
     else:
         bag[item_id] = quantity
-        messages.success(request, f'Added {book.title} to your bag')
+        messages.success(request, f'Added {book.title} to your shopping bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -38,7 +38,7 @@ def add_to_bag(request, item_id):
 
 def update_bag(request, item_id):
     """
-    Updates the books quantity
+    Updates the quantity of the book as entered
     """
 
     book = get_object_or_404(Book, pk=item_id)
@@ -62,7 +62,7 @@ def update_bag(request, item_id):
 
 def remove_from_bag(request, item_id):
     """
-    Removes the item from the bag
+    Removes the item from the shopping bag
     """
 
     try:
