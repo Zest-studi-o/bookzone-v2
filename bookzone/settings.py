@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'home',
     'books',
     'bag',
+    'jquery',
 ]
 
 MIDDLEWARE = [
