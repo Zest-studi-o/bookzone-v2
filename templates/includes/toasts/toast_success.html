@@ -1,0 +1,62 @@
+<div class="custom-toast toast rounded-0 border-top-0" data-autohide="true" data-delay="30000">
+    <div class="arrow-success"></div>
+    <div class="w-100 toast-capper bg-success "></div>
+    <div class="py-2 px-2 text-center main-clr-thm">
+        <strong>Processed successfully!</strong>
+        <button type="button" class="btn mb-1 main-clr-thm fs-2 border border-white" data-dismiss="toast"
+            aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="toast-body bg-white">
+        <div class="row">
+            <div class="col">
+                {{ message }}
+                <hr class="mt-1 mb-3">
+            </div>
+        </div>
+        <!-- Toast success bag preview -->
+        {% if grand_total and not on_profile_page %}
+        <p class="logo-font bg-white text-black py-1">Your Books Currently in the Shopping Bag ({{ book_count }})
+        </p>
+        <div>
+            {% for item in bag_items %}
+            <div class="row">
+                <div class="col-3 my-1">
+                    {% if item.book.image %}
+                    <img class="w-100" src="{{ item.book.image.url }}" alt="{{ item.book.title }}">
+                    {% endif %}
+                </div>
+                <div class="col-9">
+                    <p class="my-0"><strong>{{ item.book.title }}</strong></p>
+                    <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col">
+                <strong>
+                    <p class="mt-3 mb-1 text-black">
+                        Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}:
+                        <span class="float-right">${{ total|floatformat:2 }}</span>
+                    </p>
+                </strong>
+                {% if free_delivery_delta > 0 %}
+                <p class="my-2 p-2 bg-delivery text-black text-center">
+                    Add more books for at least <strong>${{ free_delivery_delta }}</strong> to get them delivered
+                    <strong class="fs-3 text-uppercase">for
+                        free!</strong>
+                </p>
+                {% endif %}
+                <a href="{% url 'view_bag' %}" class="btn main-clr-thm">
+                    <span class="text-uppercase">Go To Secure Checkout</span>
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
