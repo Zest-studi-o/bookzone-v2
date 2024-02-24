@@ -1,8 +1,10 @@
 from django.db import models
+#from django.contrib.auth.models import User
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django_countries.fields import CountryField
+#to import the custom user
 from django.conf import settings
 
 
@@ -11,9 +13,9 @@ class UserProfile(models.Model):
     User profile model with default new order information
     & history with previous orders
     """
-    #user = models.OneToOneField('settings.AUTH_USER_MODEL', on_delete=models.CASCADE)
+    # reference to custom user
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    #user = models.OneToOneField(User, on_delete=models.CASCADE)
+    
     default_phone_number = models.CharField(max_length=20,
                                             null=True, blank=True)
     default_address1 = models.CharField(max_length=80,
