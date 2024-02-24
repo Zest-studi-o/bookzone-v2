@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="error-page"></div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-12 mt-5">
+            <h1 class="display-4 logo-font text-danger text-center">
+                Oops! 404 error - Page not found.
+            </h1>
+            <div class="my-5">
+                <a href="{% url 'books' %}" class="my-2 text-uppercase btn main-clr-thm">
+                    <span>
+                        <i class="fa-solid fa-book-open"></i> Find your book now
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
