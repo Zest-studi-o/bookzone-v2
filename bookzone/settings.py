@@ -31,6 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-zeststudio-bookzone-k18d38paw1h.ws-eu108.gitpod.io',
+    '8000-zeststudio-p05bookzone-goau5ijk38u.ws-eu108.gitpod.io'
 ]
 
 # Application definition
@@ -66,7 +67,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
+   
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
