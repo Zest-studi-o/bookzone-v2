@@ -27,7 +27,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+4c%$ok%n2xk&&$(zq@cvjq4d*4hnao@w#=^idd544qby@99fz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     '8000-zeststudio-bookzone-k18d38paw1h.ws-eu108.gitpod.io',
