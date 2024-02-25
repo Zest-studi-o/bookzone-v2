@@ -35,6 +35,9 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    def get_friendly_name(self):
+        return self.friendly_name
+
 class Transaction(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='transactions')
     buyer = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='purchases')
