@@ -35,7 +35,9 @@ class UserProfile(models.Model):
         return self.user.username
 
 
-@receiver(post_save, sender=User)
+#@receiver(post_save, sender=User)
+#@receiver(post_save, sender=CustomUser)
+@receiver(post_save, sender=settings.AUTH_USER_MODEL)
 def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
     Create new users profile or save the details if already exists
