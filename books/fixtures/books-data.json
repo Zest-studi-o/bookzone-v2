@@ -58,7 +58,7 @@
         "model": "books.book",
         "fields": {
             "sku": "pp04",
-            "isbn": " 9781529389418",
+            "isbn": "9781529389418",
             "title": "The Gardener's Almanac: A Treasury of Wisdom and Inspiration through the Year",
             "author": "Alan Titchmarsh",
             "description": "A beautifully packaged giftbook with illustrations by Alan himself.",
@@ -153,7 +153,7 @@
         "model": "books.book",
         "fields": {
             "sku": "pp09",
-            "isbn": " 9781406387797",
+            "isbn": "9781406387797",
             "title": "I Want My Hat Back [2018]",
             "author": "Jon Klassen",
             "description": "Jon Klassen for the smallest hands! The very first HAT book in board book form.",

@@ -2,6 +2,7 @@ asgiref==3.7.2
 contourpy==1.2.0
 cryspy==0.7.6
 cycler==0.12.1
+dj-database-url==0.5.0
 Django==3.2.24
 django-allauth==0.41.0
 django-cors-headers==4.3.1
@@ -17,6 +18,7 @@ matplotlib==3.8.3
 numpy==1.26.4
 oauthlib==3.2.2
 pillow==10.2.0
+psycopg2==2.9.9
 pycifstar==0.3.0
 PyJWT==2.8.0
 pyparsing==3.1.1
