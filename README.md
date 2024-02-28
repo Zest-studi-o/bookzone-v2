@@ -4,7 +4,7 @@
 
 A web application that enables users to sell, and buy second-hand books.
 
-Visit the live site: [Bookzone]()
+Visit the live site: [Bookzone](https://bookzone-dbc6fd65e384.herokuapp.com/)
 
 # Table of contents
 
@@ -54,9 +54,9 @@ This section provides insight into the UX process, with a focus on the people wh
 
 Project goals:
 
-- To encourage people to sell and buy second-hand books by using the application.
+- To encourage people to buy second-hand books by using the application.
 
-- To provide an easy and user-friendly web app where users can buy and sell books and know more.
+- To provide an easy and user-friendly web app where users can buy books and know more.
 
 - To provide a system where the product owner can manage books and interact with customers.
 
@@ -73,8 +73,8 @@ Project goals:
 |                                       |2B| As a user, I want to be able to authenticate using only email and password|
 |                                       |2C| As a user, I want to be able to log out at any time|
 |**BOOKS**                            |  ||
-|                                       |3A| As a logged-in user, I want to be able to find the available books to buy and list any books I have to sell|
-|                                       |3B| As a logged-in user, I want to be able to select the book I want to buy or sell|                                  
+|                                       |3A| As a logged-in user, I want to be able to find the available books to buy |
+|                                       |3B| As a logged-in user, I want to be able to select the book I want to buy|                                  
 |**USER PROFILE**                       |  ||
 |                                       |4A| As a logged-in user, I want to create en entry|
 |                                       |4A| As a logged-in user, I want to view a list of my books|
