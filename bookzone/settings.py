@@ -29,7 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = False test , remove DEVELOPMENT from env.py and heroku config vars
 #DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = False
+#DEBUG = False
+DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [
     '8000-zeststudio-bookzone-k18d38paw1h.ws-eu108.gitpod.io',
