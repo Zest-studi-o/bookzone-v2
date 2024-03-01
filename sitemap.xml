@@ -108,22 +108,22 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mistery_box_cult_fiction</loc>
+  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mystery_box_cult_fiction</loc>
   <lastmod>2024-03-01T02:31:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mistery_box_mothers_day</loc>
+  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mystery_box_mothers_day</loc>
   <lastmod>2024-03-01T02:31:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mistery_box_young_adult</loc>
+  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mystery_box_young_adult</loc>
   <lastmod>2024-03-01T02:31:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mistery_box_cult_fiction,mistery_box_mothers_day,mistery_box_young_adult</loc>
+  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mystery_box_cult_fiction,mystery_box_mothers_day,mystery_box_young_adult</loc>
   <lastmod>2024-03-01T02:31:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>

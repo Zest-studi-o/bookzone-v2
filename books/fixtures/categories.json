@@ -65,21 +65,21 @@
     "pk": 10,
     "model": "books.category",
     "fields": {
-        "name": "mistery_box_cult_fiction",
+        "name": "mystery_box_cult_fiction",
         "friendly_name": "Cult Fiction Mystery Box"
     }
 }, {
     "pk": 11,
     "model": "books.category",
     "fields": {
-        "name": "mistery_box_mothers_day",
+        "name": "mystery_box_mothers_day",
         "friendly_name": "Books Mother's Day"
     }
 }, {
     "pk": 12,
     "model": "books.category",
     "fields": {
-        "name": "mistery_box_young_adult",
+        "name": "mystery_box_young_adult",
         "friendly_name": "Young Adult Fiction 6 Book Mystery Box"
     }
 }]

@@ -180,7 +180,6 @@ input[name='q']::placeholder {
 
 footer {
     flex-shrink: 0;
-    text-transform: uppercase;
     background-color: white;
     color: #3a3a3a;
     padding: 20px 0;
@@ -190,6 +189,9 @@ footer {
 footer a {
     color: black;
     text-decoration: none;
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
 }
 
 footer a:hover {
