@@ -248,6 +248,8 @@ The language used is Python
 
 [Cloudinary](https://cloudinary.com/) - For storing static data
 
+[Privacy Policy Generator](https://www.privacypolicygenerator.info/#wizard) - For generating policies.
+
 ## Deployment & Local Development
 
 ### Deployment

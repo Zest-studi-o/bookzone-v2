@@ -176,6 +176,34 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* Footer styles */
+
+footer {
+    flex-shrink: 0;
+    text-transform: uppercase;
+    background-color: white;
+    color: #3a3a3a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: grey;
+    transition: color 0.3s;
+}
+
+footer i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: grey;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
