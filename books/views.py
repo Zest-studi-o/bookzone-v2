@@ -43,9 +43,9 @@ def all_books(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('books'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            bookts = books.filter(queries)
+            #Filter books 
+            queries = Q(title__icontains=query) | Q(description__icontains=query)
+            books = books.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
 
