@@ -109,13 +109,13 @@ I've decomposed my Epics into stories prior to prioritizing and implementing the
 
 ### Flowchart
 
-![Flowchart](docs/readme/P04-flowchart.jpeg)
+![Flowchart](docs/readme/P05-flowchart.jpeg)
 
 ### Database Schema
 The database schema shows the structure of the database, the type and their relationship. This schema was done using 
 [Lucid Chart](https://www.lucidchart.com/)
 
-![Database Schema](docs/readme/P04-database-schema.jpg)
+![Database Schema](docs/readme/P05-database-schema.jpg)
 
 ### Colour Palette
 blabla
@@ -123,9 +123,7 @@ blabla
 ![Colour palette](docs/readme/colour-palette.png)
 
 ### Typography
-For the logo I have used Family Dancing which is a script typeface and looks elegant which matches the rest of the visual identity.
-This font was used in some headings such as the homepage in order to embellish it and then for the body copy a readable sans serif, optimal for web design such as Roboto. This last one is also used in the form headings as it is easier to read.
-The fonts were taken from Google Fonts:
+Typography chones:
 
 - [Roboto](https://fonts.google.com/specimen/Roboto)
 - [Dancing Script](https://fonts.google.com/specimen/Dancing+Script)
@@ -202,7 +200,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 **User Feedback**
 
-- The user receives feedback providing messages with relevant information such as their logged in status or booking success as in the example bellow:
+- The user receives feedback providing messages with relevant information such as their logged-in status or booking success as in the example bellow:
 
 ![User feedback](docs/readme/features/success.jpg)
 
@@ -213,6 +211,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 In the future, I would like to:
 
 - Add a barcode scanner that can read the book iban and add it to the database.
+- In the future I would like the app to allow users to also sell their second-hand books.
 
 ---
 
@@ -288,8 +287,19 @@ In order to protect the django app secret key it was set as environment variable
 
 ####  AWS
 1. Log in to [AWS](https://aws.amazon.com/) or create an account
-2. abc
-3. abc
+2. Create bucket: select ACLs enabled & Bucket Owner Preferred
+3. Allow Bucket Policy public access
+4. Configure cross-origin resource sharing (CORS) configuration 
+4. IAM >  Create group > Create a policy > Attach policy
+5. Retrieve access key:
+
+    - Select the user for whom you wish to create a CSV file.
+    -  Select the 'Security Credentials' tab
+    -  Scroll to 'Access Keys' and click 'Create access key'
+    - Select 'Application running outside AWS', and click next
+    - On the next screen, you can leave the 'Description tag value' blank. Click 'Create Access Key'
+    - Click the 'Download .csv file' button
+
 
 ### Local Development
 
@@ -345,6 +355,4 @@ I took from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.
 - [Fav Icon](https://www.vecteezy.com/vector-art/578649-book-reading-logo-and-symbols-template-icons-app)
 
 ### Acknowledgments
-
-- My Code Institute Mentor.
 - Tutor support at Code Institute.
