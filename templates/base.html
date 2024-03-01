@@ -40,7 +40,15 @@
     </script>
     {% endblock %}
 
-    {% block extra_js %}
+    <!-- Mailchimp subscribe banner-->
+    {% block header_js %}
+    <script id="mcjs">
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                m, p)
+        }(document, "script",
+            "https://chimpstatic.com/mcjs-connected/js/users/cf0b0b98ecb089d5da9fb797b/ad129db9425e0431f22201e6c.js");
+    </script>
     {% endblock %}
 
     <title>BookZone {% block extra_title %}{% endblock %}</title>

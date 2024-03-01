@@ -337,6 +337,8 @@ I took from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.
 
 - [BookZone home page background](https://www.freepik.com/free-photo/modern-bookstore-showcasing-rows-vibrant-books_84718526.htm)
 
+- [Isolated book](https://www.freepik.com/free-psd/books-stacked-isolated-transparent-background_91063711.htm#fromView=search&page=1&position=4&uuid=84f827e7-c769-4987-9430-0f9ab33aaa48)
+
 
 ### Acknowledgments
 
