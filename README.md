@@ -240,15 +240,19 @@ The language used is Python
 
 [Heroku](https://id.heroku.com/) - To deploy the App.
 
-[Code Institute template](https://github.com/Code-Institute-Org/p3-template) - To run the game in the terminal using Heroku.
+[Illustrator](https://www.adobe.com/) - To adjust the logo vector for the favicon
 
 [Django](https://www.djangoproject.com/) - Web Framework.
 
 [Elephantsql](https://www.elephantsql.com/) - PostgreSQL as a Service.
 
-[Cloudinary](https://cloudinary.com/) - For storing static data
+[AWS](https://aws.amazon.com/) - For storing static data.
+
+[Mailchimp](https://mailchimp.com/) - To create the newsletter sign-up banner.
 
 [Privacy Policy Generator](https://www.privacypolicygenerator.info/#wizard) - For generating policies.
+
+[Sitemaps generator](www.xml-sitemaps.com)
 
 ## Deployment & Local Development
 
@@ -282,11 +286,10 @@ In order to protect the django app secret key it was set as environment variable
 10. Paste this URL into env.py file as DATABASE_URL value and save the file.
 
 
-####  Cloudinary
-1. Log in to [Cloudinary](https://cloudinary.com/) or create an account
-2. Navigate to dashboard/console https://console.cloudinary.com/console/ and copy API Enviroment variable starting with "cloudinary://".
-3. Paste copied url into env.py file as CLOUDINARY_URL value and save the file.
-
+####  AWS
+1. Log in to [AWS](https://aws.amazon.com/) or create an account
+2. abc
+3. abc
 
 ### Local Development
 
@@ -339,6 +342,7 @@ I took from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.
 
 - [Isolated book](https://www.freepik.com/free-psd/books-stacked-isolated-transparent-background_91063711.htm#fromView=search&page=1&position=4&uuid=84f827e7-c769-4987-9430-0f9ab33aaa48)
 
+- [Fav Icon](https://www.vecteezy.com/vector-art/578649-book-reading-logo-and-symbols-template-icons-app)
 
 ### Acknowledgments
 
