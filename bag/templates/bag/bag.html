@@ -143,27 +143,48 @@
 {% include 'books/includes/quantity_input_script.html' %}
 
 <script type="text/javascript">
-    // Update quantity on click
+    // The quantity gets updated on click
     $('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
         form.submit();
-    })
+    });
 
-    // Remove item and reload on click
+    // Remove an item on click and reload
     $('.remove-item').click(function (e) {
+        // Get CSRF token
         var csrfToken = "{{ csrf_token }}";
+        // Extract the ID from the attribute
         var itemId = $(this).attr('id').split('remove_')[1];
-
+        // URL to remove the item
         var url = `/bag/remove/${itemId}/`;
+        // Prepare data to POST
         var data = {
-            'csrfmiddlewaretoken': csrfToken,
-
+            'csrfmiddlewaretoken': csrfToken
         };
 
+        // Send a POST request to remove the item
         $.post(url, data)
             .done(function () {
+                // Update the bag on reload
                 location.reload();
             });
-    })
+    });
+
+    // Add input event listener to quantity input fields
+    $('.qty_input').on('input', function () {
+        var maxQuantity = 99; // Maximum quantity allowed 
+
+        // Get the quantity removing decimal values
+        var newQuantity = parseInt($(this).val().replace(/[^0-9]/g, '')) || 0;
+
+        // Ensure the new quantity is not greater than the maximum
+        if (newQuantity > maxQuantity) {
+            newQuantity = maxQuantity;
+        }
+
+        // Update the the field
+        $(this).val(newQuantity);
+    });
 </script>
+
 {% endblock %}

@@ -176,7 +176,7 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* Footer styles */
+/* Footer styles 
 
 footer {
     flex-shrink: 0;
@@ -203,6 +203,31 @@ footer i:hover {
     cursor: pointer;
     transform: scale(1.1);
     color: grey;
+}*/
+
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #000000;
+}
+
+.footer-text {
+    text-align: center;
+    color: #000;
 }
 
 
