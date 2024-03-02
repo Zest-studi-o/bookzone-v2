@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<!-- Container for the header section -->
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+<br>
+{% endblock %}
+
+{% block content %}
+<!-- Container for the main content -->
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <!-- Heading for the review deletion confirmation page -->
+            <h2 class="logo-font">Are you sure you want to delete your review?</h2>
+            <hr class="mb-1">
+            <div class="container-fluid">
+                {% if user.is_authenticated and user.id == review.author.id %}
+                <!-- Check if user is authenticated and the author of the review -->
+                <h3 class="text-danger">You will not be able to add a review for this order again!</h3>
+                <div class="card-container my-5">
+                    <div class="col-12">
+                        <!-- Form to confirm review deletion -->
+                        <form method="POST" action=".">
+                            {% csrf_token %}
+                            <div class="text-center">
+                                <input class="btn btn-outline-black rounded-0" type="submit" value="Yes!" />
+                            </div>
+                            <br>
+                            <div class="text-center">
+                                <a class="btn btn-outline-black rounded-0" href="{% url 'reviews' %}">No, go back!</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                {% else %}
+                <div class="card-container my-5">
+                    <div class="col-12">
+                        <h3 class="text-danger">You are not the author of this review!</h3>
+                    </div>
+                    <div class="my-5">
+                        <h3>
+                            <a href="{% url 'products' %}"
+                                class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
+                                Return to shop
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

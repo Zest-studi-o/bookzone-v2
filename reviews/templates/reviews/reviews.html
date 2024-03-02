@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<!-- Container for the header section -->
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+<br>
+{% endblock %}
+
+{% block content %}
+<!-- Container for the main content -->
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <!-- Heading for the customer reviews page -->
+            <h2 class="logo-font">What our customers think</h2>
+            <hr class="mb-1">
+        </div>
+    </div>
+    <div class="row">
+        <!-- Reviews Entries Column -->
+        <div class="col-12 col-lg-8 mx-auto mt-3">
+            <div class="row">
+                {% for review in review_list %}
+                <div class="col-md-12">
+                    <div class="mb-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Title of the review -->
+                                <h2 class="card-title">{{ review.title }}</h2>
+                                <hr>
+                                <!-- Service associated with the review -->
+                                <p class="card-text text-black h6"><span class="text-muted">Book reviewed:
+                                    </span>{{ review.book_reviewed }}</p>
+                                <hr>
+                                <!-- Date and reviewer information -->
+                                <p class="card-text text-sub h6"><span class="text-muted">Date:
+                                    </span>{{ review.date_created }}</p>
+                                <p class="card-text text-sub h6"><span class="text-muted">Reviewer:
+                                    </span>{{ review.reviewer }}</p>
+                                <!-- Star rating display -->
+                                <div class="stars" style="--rating: {{ review.rating }};"
+                                    aria-label="Rating of this product is {{ review.rating }} out of 5."></div>
+                            </div>
+                            <div class="card-body">
+                                <!-- Review text content -->
+                                {{ review.content | safe }}
+                            </div>
+                            <!-- Edit and delete links for the reviews -->
+                            {% if user.is_authenticated and user.id == review.reviewer.id %}
+                            <small class="ml-3">
+                                <a href="{% url 'update_review' review.id %}">Edit</a> |
+                                <a class="text-danger" href="{% url 'delete_review' review.id %}">Delete</a>
+                            </small>
+                            {% endif %}
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <!-- Create a new row after each review card -->
+                {% if forloop.counter|divisibleby:1 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Pagination navigation -->
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+</div>
+{%endblock%}
