@@ -181,7 +181,7 @@ input[name='q']::placeholder {
 footer {
     flex-shrink: 0;
     color: #3a3a3a;
-    padding: 20px 0;
+    padding: 3rem 0 5rem 0 !important;
     text-align: center;
 }
 
@@ -190,7 +190,7 @@ footer a {
     text-decoration: none;
     font-size: 160%;
     margin: 1%;
-    padding-bottom: 5rem !important;
+
 }
 
 footer a:hover {
