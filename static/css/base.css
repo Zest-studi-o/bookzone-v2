@@ -176,7 +176,7 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* Footer styles 
+/* Footer styles */
 
 footer {
     flex-shrink: 0;
@@ -203,8 +203,9 @@ footer i:hover {
     cursor: pointer;
     transform: scale(1.1);
     color: grey;
-}*/
+}
 
+/* 
 .social-networks {
     text-align: center;
 }
@@ -228,7 +229,7 @@ footer i:hover {
 .policy {
     font-size: 110% !important;
 }
-
+*/
 
 /* -------------------------------- Media Queries */
 
