@@ -24,13 +24,14 @@ Visit the live site: [Bookzone](https://bookzone-dbc6fd65e384.herokuapp.com/)
   - [Features](#Features)
 
 - [Marketing Stategy](#Marketing-Stategy)
-
-  - [Facebook](#Facebook)
-  - [Target Audience](#Target-Audience)
+  - [Business model](#Business-model)
+  - [Social Media](#Social-Media)
+      - [Facebook](#Facebook)
+  - [Newsletter](#Newsletter)
+      - [Mailchimp](#Mailchimp)
 
 - [Technologies Used](#Technologies-Used)
 
-  - [Languages Used](#languages-used)
   - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
 - [Deployment & Local Development](#Deployment--Local-Development)
@@ -116,7 +117,7 @@ I've decomposed my Epics into stories prior to prioritizing and implementing the
 ![Flowchart](docs/readme/P05-flowchart.jpeg)
 
 ### Database Schema
-The database schema shows the structure of the database, the type and their relationship. This schema was done using 
+The database schema shows the structure of the database, the type and their relationship. This schema was done using
 [Lucid Chart](https://www.lucidchart.com/)
 
 ![Database Schema](docs/readme/P05-database-schema.jpg)
@@ -141,7 +142,7 @@ The images are taken from the royalty-free sites credited [here](#Credits).
 Wireframes for desktop, tablet and mobile versions are as follows:
 
 - Home 
-![Home](docs/readme/features/home.jpg)
+![Home](docs/readme/wf/home.jpg)
 
 #### Existing Features
 
@@ -155,7 +156,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 - All pages include a navigation bar
 
-![Nav Bar](docs/readme/features/nav-bar.jpg)
+![Nav Bar](docs/readme/features/nav.jpg)
 
 **Footer**
 
@@ -218,20 +219,29 @@ In the future, I would like to:
 
 ### Marketing Stategy
 
-#### Facebook
+#### Business model
+The business is a B2C e-commerce platform with the main goal of selling second-hand books listed online on the website. The target audience is book lovers of all ages who are on a budget or are interested in giving a new life to second-hand books. The payment type employed is: SINGLE PAYMENT The transaction is finished & delivery order is created once a single payment is made. The available payment option is payment by card, implemented using Stripe.
+
+#### Social Media
+##### Facebook
+Bookzone has a company page on facebook. The content of posts is to address new books added to the site and to encourage the user to visit the store using call to action to visit the site.
+
 - Facebook Page 
-![Facebook Page](docs/readme/facebook-page.jpg)
+![Facebook Page](docs/readme/digital-marketing/facebook-page.jpg)
 
 - Social Media Post
-![Facebook Page](docs/readme/post.png)
+![Facebook Page](ddocs/readme/digital-marketing/post.jpg)
 
-### Target Audience
+#### Newsletter
+##### Mailchimp
+Mailchimp is used to collect email addresses from users who would like to subscribe for the store's newsletter. It is on purpose very simple, just enough that a user enters email address & click on the subscribe button. The newsletter content is to inform about sales or new books added to the store available on website.
+
+![Mailchimp](docs/readme/digital-marketing/mailchimp.jpg)
+
 ---
 ## Technologies Used
 
-### Languages Used
-
-The language used is Python
+The main technologies used are Python, Javascript, html, css, Django & SQL
 
 ### Frameworks, Libraries & Programs Used
 
@@ -343,7 +353,7 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Code Used
 
-- Other students examples helped me to understand the structure of a restaurant booking system app, how to link user stories to epics & what is expected for the README.md such as [project](projecturl)
+- Other students examples helped me to understand the structure of an e-commerce application, how to link user stories to epics & what is expected for the project & README.md such as [Hi-Story](https://github.com/WojtekKamilowski/CI_PP5_HSBS)
 
 - [Code Institue](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm) walkthrough tutorial "Boutique Ado".
 
