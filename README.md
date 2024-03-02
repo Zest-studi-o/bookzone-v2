@@ -22,7 +22,11 @@ Visit the live site: [Bookzone](https://bookzone-dbc6fd65e384.herokuapp.com/)
   - [Imagery](#Imagery)
   - [Wireframes](#Wireframes)
   - [Features](#Features)
-  
+
+- [Marketing Stategy](#Marketing-Stategy)
+
+  - [Facebook](#Facebook)
+  - [Target Audience](#Target-Audience)
 
 - [Technologies Used](#Technologies-Used)
 
@@ -139,9 +143,6 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 - Home 
 ![Home]()
 
-
-### Features
-
 #### Existing Features
 
 **Logo**
@@ -176,19 +177,19 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 **Books list**
 
-- A list of the bookings is displayed on this page.
+- A list of the books is displayed on this page.
 
 ![Booking List](docs/readme/features/bookings.jpg)
 
 **Edit books**
 
-- The user can edit their bookings.
+- The user can edit their books.
 
-![Edit bookings](docs/readme/features/edit-booking.jpg)
+![Edit bookings](docs/readme/features/edit-books.jpg)
 
 **Delete books**
 
-- The user can delete their bookings.
+- The user can delete their books.
 
 ![Delete bookings](docs/readme/features/delete-button.jpg)
 
@@ -200,7 +201,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 **User Feedback**
 
-- The user receives feedback providing messages with relevant information such as their logged-in status or booking success as in the example bellow:
+- The user receives feedback providing messages with relevant information such as their logged-in status as in the example bellow:
 
 ![User feedback](docs/readme/features/success.jpg)
 
@@ -215,6 +216,17 @@ In the future, I would like to:
 
 ---
 
+### Marketing Stategy
+
+#### Facebook
+- Facebook Page 
+![Facebook Page](docs/readme/facebook-page.jpg)
+
+- Social Media Post
+![Facebook Page](docs/readme/post.png)
+
+### Target Audience
+---
 ## Technologies Used
 
 ### Languages Used
