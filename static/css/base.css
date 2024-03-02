@@ -180,7 +180,6 @@ input[name='q']::placeholder {
 
 footer {
     flex-shrink: 0;
-    background-color: white;
     color: #3a3a3a;
     padding: 20px 0;
     text-align: center;
@@ -191,7 +190,7 @@ footer a {
     text-decoration: none;
     font-size: 160%;
     margin: 1%;
-    padding: 5%;
+    padding-bottom: 5rem !important;
 }
 
 footer a:hover {
@@ -204,32 +203,6 @@ footer i:hover {
     transform: scale(1.1);
     color: grey;
 }
-
-/* 
-.social-networks {
-    text-align: center;
-}
-
-.social-networks>li {
-    display: inline;
-}
-
-.social-networks i {
-    font-size: 160%;
-    margin: 1%;
-    padding: 5%;
-    color: #000000;
-}
-
-.footer-text {
-    text-align: center;
-    color: #000;
-}
-
-.policy {
-    font-size: 110% !important;
-}
-*/
 
 /* -------------------------------- Media Queries */
 
