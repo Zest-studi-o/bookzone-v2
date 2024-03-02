@@ -230,6 +230,10 @@ footer {
     color: #000;
 }
 
+.policy {
+    font-size: 110% !important;
+}
+
 
 /* -------------------------------- Media Queries */
 
