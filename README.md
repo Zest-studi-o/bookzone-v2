@@ -141,15 +141,15 @@ The images are taken from the royalty-free sites credited [here](#Credits).
 Wireframes for desktop, tablet and mobile versions are as follows:
 
 - Home 
-![Home]()
+![Home](docs/readme/features/home.jpg)
 
 #### Existing Features
 
-**Logo**
+**Fav Icon**
 
 - The website visual identity.
 
-![Logo](docs/readme/features/logo.png)
+![Fav Icon](docs/readme/features/favicon.jpg)
 
 **Nav Bar**
 
@@ -167,43 +167,43 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 - The home page includes a hero image.
 
-![Hero](docs/readme/features/hero-image.jpg)
+![Hero](docs/readme/features/hero.jpg)
 
-**Contact**
+**Filters**
 
-- The contact details are presented to the user.
+- The website include filters for searching and sorting books.
 
-![About us](docs/readme/features/about-the-venue.jpg)
+![Filters](docs/readme/features/filters.jpg)
 
 **Books list**
 
-- A list of the books is displayed on this page.
+- All books - A list of the books is displayed on this page.
 
-![Booking List](docs/readme/features/bookings.jpg)
+![Books List](docs/readme/features/all-books.jpg)
 
-**Edit books**
+**User Crud**
 
-- The user can edit their books.
+- The user can create, read, update and delete books in their shopping bag.
 
-![Edit bookings](docs/readme/features/edit-books.jpg)
+![User Crud](docs/readme/features/user-crud.jpg)
 
-**Delete books**
+**Admin Crud**
 
-- The user can delete their books.
+- The admin can create, read, update and delete books in the admin panel.
 
-![Delete bookings](docs/readme/features/delete-button.jpg)
+![Delete bookings](docs/readme/features/admin-crud.jpg)
 
-**Confirmation message**
+**Allauth**
 
-- A confirmation message is displayed before deleting a booking.
+- Different templates for the user to log in, sign up, reset password, etc.
 
-![Success message](docs/readme/features/confirm-delete.jpg)
+![All auth](docs/readme/features/all-auth.jpg)
 
 **User Feedback**
 
-- The user receives feedback providing messages with relevant information such as their logged-in status as in the example bellow:
+- The user receives feedback providing messages with relevant information such as when they update a book in their bag seen in the example bellow:
 
-![User feedback](docs/readme/features/success.jpg)
+![User feedback](docs/readme/features/user-feedback.jpg)
 
 ---
 
