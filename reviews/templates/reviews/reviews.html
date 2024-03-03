@@ -12,6 +12,10 @@
 {% endblock %}
 
 {% block content %}
+
+<!-- Overlay for white background with no image -->
+<div class ="overlay"></div>
+
 <!-- Container for the main content -->
 <div class="container">
     <div class="row">
@@ -33,7 +37,7 @@
                                 <!-- Title of the review -->
                                 <h2 class="card-title">{{ review.title }}</h2>
                                 <hr>
-                                <!-- Service associated with the review -->
+                                <!-- Book reviewed -->
                                 <p class="card-text text-black h6"><span class="text-muted">Book reviewed:
                                     </span>{{ review.book_reviewed }}</p>
                                 <hr>

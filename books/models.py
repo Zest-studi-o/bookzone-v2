@@ -1,4 +1,5 @@
 from django.contrib.auth.models import AbstractUser
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 
 
@@ -46,12 +47,14 @@ class Transaction(models.Model):
 
     def __str__(self):
         return f'{self.book.title} sold to {self.buyer.username} on {self.date}'
-
+        
+# Used for admin review
 class Review(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='reviews')
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='reviews')
     content = models.TextField()
-    rating = models.PositiveIntegerField()
+    rating = models.IntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(5)])
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

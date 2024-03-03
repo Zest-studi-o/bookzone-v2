@@ -42,14 +42,14 @@ class ReviewCreateView(LoginRequiredMixin, CreateView):
             return redirect('profile')  # Redirect to the profile page or another appropriate page # noqa E501
 
         # Check if the order has already been reviewed
-        if order.reviewed:
+        if order.book_reviewed:
             messages.error(self.request, "This order has already been reviewed.")  # noqa E501
             return redirect('profile')  # Redirect to the profile page or another appropriate page # noqa E501
 
         form.instance.order = order
         super().form_valid(form)
-        if not order.reviewed:
-            order.reviewed = True
+        if not order.book_reviewed:
+            order.book_reviewed = True
             order.save()
 
         messages.success(self.request, "Added a new Review! Please wait for our admin to accept and publish.")  # noqa E501

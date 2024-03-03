@@ -17,22 +17,22 @@ class Review(models.Model):
     reviewer = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=0)
     content = models.TextField()
     order = models.OneToOneField(Order, on_delete=models.CASCADE, related_name='order', unique=True) 
-    rating = models.PositiveIntegerField()
-    #rating = models.IntegerField(
-        #validators=[MinValueValidator(1), MaxValueValidator(5)])
+    rating = models.IntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(5)])
     date = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
+    """
     def __str__(self):
-        #return f'Review by {self.user.username} for {self.book.title}'
+        
         return f'Review by {self.reviewer.username} for {self.book.review_title}'
-
+    """
     def save(self, *args, **kwargs):
-        self.content = bleach.clean(self.content, tags=[], attributes={}, protocols=[], strip=True) 
+        self.content = bleach.clean(self.content, tags=[], attributes={}, protocols=[], strip=True)  # noqa E501
         super(Review, self).save(*args, **kwargs)
 
     class Meta:
         ordering = ['-date_created']
 
     def __str__(self):
-        return self.book_reviewed
+        return self.review_title
