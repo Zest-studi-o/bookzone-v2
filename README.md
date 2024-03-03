@@ -213,7 +213,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 In the future, I would like to:
 
 - Add a barcode scanner that can read the book iban and add it to the database.
-- In the future I would like the app to allow users to also sell their second-hand books.
+- I would like the app to allow users to also sell their second-hand books.
 
 ---
 
@@ -224,7 +224,7 @@ The business is a B2C e-commerce platform with the main goal of selling second-h
 
 #### Social Media
 ##### Facebook
-Bookzone has a company page on facebook. The content of posts is to address new books added to the site and to encourage the user to visit the store using call to action to visit the site.
+Bookzone has a company page on Facebook. The content of posts is to address new books added to the site and to encourage the user to visit the store using calls to action to visit the site.
 
 - Facebook Page 
 ![Facebook Page](docs/readme/digital-marketing/facebook-page.jpg)
@@ -234,7 +234,7 @@ Bookzone has a company page on facebook. The content of posts is to address new 
 
 #### Newsletter
 ##### Mailchimp
-Mailchimp is used to collect email addresses from users who would like to subscribe to the store's newsletter. It is on purpose very simple, just enough that a user enters email address & click on the subscribe button. The newsletter content is to inform about sales or new books added to the store available on website.
+Mailchimp is used to collect email addresses from users who would like to subscribe to the store's newsletter. It is on purpose very simple, just enough that a user enters the email address and click on the subscribe button. The newsletter content is to inform about sales or new books added to the store available on the website.
 
 ![Mailchimp](docs/readme/digital-marketing/mailchimp.jpg)
 
@@ -282,7 +282,7 @@ The main technologies used are Python, Javascript, html, css, Django & SQL
 - This site was deployed by completing the following steps:
 
 ####  Django
-In order to protect the django app secret key it was set as environment variable and stored in env.py file
+In order to protect the django app secret key it was set as an environment variable and stored in env.py file
 
 ####  Heroku
 1. Log in to [Heroku](https://id.heroku.com) or create an account
@@ -353,17 +353,17 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 ### Code Used
 
-- Other students examples helped me to understand the structure of an e-commerce application, how to link user stories to epics & what is expected for the project & README.md such as [Hi-Story](https://github.com/WojtekKamilowski/CI_PP5_HSBS)
+- Other students' examples helped me to understand the structure of an e-commerce application, how to link user stories to epics & what is expected for the project & README.md such as [Hi-Story](https://github.com/WojtekKamilowski/CI_PP5_HSBS)
 
 - [Code Institue](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm) walkthrough tutorial "Boutique Ado".
 
 - [Stack overflow](https://stackoverflow.com/) helped me to troubleshoot many of the issues encountered.
 
-- I also researched on [W3 Schools](https://www.w3schools.com/) & [Django Documentation](https://docs.djangoproject.com/en/4.2/).
+- I also researched using [W3 Schools](https://www.w3schools.com/) & [Django Documentation](https://docs.djangoproject.com/en/4.2/).
 
 ### Content
 
-- I used [Chapters](https://chaptersbookstore.com/) for books content including images.
+- I used [Chapters](https://chaptersbookstore.com/) for books' content including images.
 
 
 ### Media

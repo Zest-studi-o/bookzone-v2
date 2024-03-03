@@ -63,6 +63,18 @@
                                 </ul>
                             </td>
                             <td>${{ order.grand_total }}</td>
+
+                            <!-- Row with link to review -->
+                            <td>
+                                {% if order.reviewed %}
+                                <p class="text-info">Already Reviewed!</p>
+                                {% else %}
+                                <a id="review-link-{{ order.order_number }}" class="text-success"
+                                    href="{% url 'add_review' order.order_number %}">
+                                    Rate now!
+                                </a>
+                                {% endif %}
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>
