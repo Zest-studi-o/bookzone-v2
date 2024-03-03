@@ -55,7 +55,7 @@ Visit the live site: [Bookzone](https://bookzone-dbc6fd65e384.herokuapp.com/)
 
 #### Key information for the site
 
-This section provides insight into the UX process, with a focus on the people who this restaurant booking system has been created for, the main aims of the project and how it can help users to meet their needs.
+This section provides insight into the UX process, with a focus on the people who this e-commerce application shop has been created for, the main aims of the project and how it can help users to meet their needs.
 
 Project goals:
 
@@ -105,7 +105,7 @@ I've decomposed my Epics into stories prior to prioritizing and implementing the
 
 - **Must Have:** guaranteed to be delivered (max 60% of stories)
 - **Should Have:** adds significant value, but not vital (the rest ~20% of stories)
-- **Could Have:** has small impact if left out (20% of stories)
+- **Could Have:** has a small impact if left out (20% of stories)
 - **Won't Have:** not a priority for this iteration
 
 ---
@@ -148,7 +148,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 **Fav Icon**
 
-- The website visual identity.
+- The website's visual identity.
 
 ![Fav Icon](docs/readme/features/favicon.jpg)
 
@@ -234,7 +234,7 @@ Bookzone has a company page on facebook. The content of posts is to address new 
 
 #### Newsletter
 ##### Mailchimp
-Mailchimp is used to collect email addresses from users who would like to subscribe for the store's newsletter. It is on purpose very simple, just enough that a user enters email address & click on the subscribe button. The newsletter content is to inform about sales or new books added to the store available on website.
+Mailchimp is used to collect email addresses from users who would like to subscribe to the store's newsletter. It is on purpose very simple, just enough that a user enters email address & click on the subscribe button. The newsletter content is to inform about sales or new books added to the store available on website.
 
 ![Mailchimp](docs/readme/digital-marketing/mailchimp.jpg)
 

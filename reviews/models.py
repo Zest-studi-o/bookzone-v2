@@ -18,6 +18,8 @@ class Review(models.Model):
     content = models.TextField()
     order = models.OneToOneField(Order, on_delete=models.CASCADE, related_name='order', unique=True) 
     rating = models.PositiveIntegerField()
+    #rating = models.IntegerField(
+        #validators=[MinValueValidator(1), MaxValueValidator(5)])
     date = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
