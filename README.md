@@ -230,7 +230,7 @@ Bookzone has a company page on Facebook. The content of posts is to address new 
 ![Facebook Page](docs/readme/digital-marketing/facebook-page.jpg)
 
 - Social Media Post
-![Facebook Page](ddocs/readme/digital-marketing/post.jpg)
+![Facebook Page](docs/readme/digital-marketing/post.jpg)
 
 #### Newsletter
 ##### Mailchimp

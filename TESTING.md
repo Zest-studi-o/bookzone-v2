@@ -1,6 +1,6 @@
 # BOOKZONE
 
-![Bookzone](docs/readme/project-mockup.jpg)
+![Bookzone](docs/readme/aimresponsive.png)
 
 A web application that enables users to sell, and buy second-hand books.
 
@@ -31,10 +31,10 @@ Automated testing was carried out at a later stage using validators and all erro
 
 I used [Python Linter - Pep8CI](https://pep8ci.herokuapp.com/) to test python code, most errors were fixed which were related to spacing or lines length.
 
-![Python Linter](docs/testing/python-linter/python_linter.jpg)
+![Python Linter](docs/testing/python/python-linter-example.png)
 
 Some long line errors remained due to the impossibility of splitting up lines of code that would stop working otherwise or in build django code for example some lines at setting.py
-![Python Linter](docs/testing/python-linter/linter-settings.png)
+![Python Linter](docs/testing/python/settings.png)
 
 ### Lighthouse
 
@@ -45,7 +45,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ##### Home
 ![Home Desktop](docs/testing/lighthouse/desktop/lh-home-desktop.jpg)<br><br>
 
-##### Menu
+##### Books
 ![Menu Desktop](docs/testing/lighthouse/desktop/lh-menu-desktop.png)<br><br>
 
 ##### Sing up
@@ -63,8 +63,8 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ##### Home
 ![Home Mobile](docs/testing/lighthouse/mobile/lh-contact-mobile.png)<br><br>
 
-##### Menu
-![Menu Mobile](docs/testing/lighthouse/mobile/lh-menu-mobile.png)<br><br>
+##### Books
+![Books Mobile](docs/testing/lighthouse/mobile/lh-menu-mobile.png)<br><br>
 
 ##### Sing up
 ![Sign Up Mobile](docs/testing/lighthouse/mobile/lh-signup-mobile.jpg)<br><br>
