@@ -374,7 +374,10 @@ I took from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.
 
 - [Isolated book](https://www.freepik.com/free-psd/books-stacked-isolated-transparent-background_91063711.htm#fromView=search&page=1&position=4&uuid=84f827e7-c769-4987-9430-0f9ab33aaa48)
 
+
 - [Fav Icon](https://www.vecteezy.com/vector-art/578649-book-reading-logo-and-symbols-template-icons-app)
+
+- I took from Dublin's City Council website the post content and the book image for a sample post about [BookZone Book club](https://www.dublincity.ie/library/blog/book-clubs-dublin-city-libraries)
 
 ### Acknowledgments
 - Tutor support at Code Institute.
