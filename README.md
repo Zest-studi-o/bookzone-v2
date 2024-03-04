@@ -379,5 +379,7 @@ I took from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.
 
 - I took from Dublin's City Council website the post content and the book image for a sample post about [BookZone Book club](https://www.dublincity.ie/library/blog/book-clubs-dublin-city-libraries)
 
+- Placeholder image for a book [Placeholder book](https://en.m.wikipedia.org/wiki/File:Placeholder_book.svg)
+
 ### Acknowledgments
 - Tutor support at Code Institute.

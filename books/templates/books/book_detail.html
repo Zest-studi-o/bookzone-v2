@@ -23,7 +23,7 @@
                     </a>
                     {% else %}
                     <a href="">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-book-image.png" alt="{{ book.title }}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}placeholder.png" alt="{{ book.title }}">
                     </a>
                 {% endif %}
             </div>
@@ -63,7 +63,7 @@
                 {% endif %}
                 <!-- If there is average rating -->
                 {% if average_rating %}
-                    <small class="text-muted"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> {{ average_rating }} / 5</small>
+                    <small class="text-muted"><i class="fa-solid fa-star" style="color: #ffaa3b;"></i> {{ average_rating }} / 5</small>
                 {% endif %}
                 <br>
 
@@ -135,7 +135,7 @@
                                             <i class="fa-solid fa-star" style="color: #ffaa3b;"></i>
                                         </span>
                                     </div>
-                                    <p class="mb-0"><strong>Review:</strong> <i class="fa-solid fa-content" style="color: #63E6BE;"></i></p>
+                                    <p class="mb-0"><strong>Review:</strong> <i class="fa-solid fa-content" style="color: #504939;"></i></p>
                                     <p >{{ review.content }}</p>
                                     <p class="text-muted small">Reviewed by: {{ review.reviewer }}</p>
                                     <p class="text-muted small">Posted on {{ review.date_created }}</p>
@@ -148,10 +148,10 @@
                         {% if user.is_authenticated %}
                             {% if has_ordered_book %}
                                 {% if has_reviewed %}
-                                    <p class="text-black">You already review the book <i class="fa-regular fa-face-smile" style="color: #FFD43B;"></i></p>
+                                    <p class="text-black">You already review the book</i></p>
                                 {% else %}
                                     <p class="lead mt-2">You purchased the book. Would you like to review it?</p>
-                                    <a href="{% url 'book_reviews' book_id=book.id %}" class="btn btn-info">Review Now</a>
+                                    <a href="{% url 'book_reviews' book_id=book.id %}" class="btn text-uppercase color: #ffaa3b" style="background-color: #ffaa3b;">Review Now</a>
                                 {% endif %}
                             {% else %}
                                 <p class="lead mt-2">You must purchase this book to leave a review!</p>

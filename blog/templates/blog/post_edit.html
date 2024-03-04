@@ -10,7 +10,8 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
+<!-- Overlay for white background with no image -->
+<div class ="overlay"></div>
 <div class="container">
     <!-- Check if the user is allowed to edit-->
     {% if request.user.is_superuser %}

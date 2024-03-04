@@ -31,7 +31,7 @@
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c46f318273.js" crossorigin="anonymous"></script>
     <!-- JQuery -accepts AJAX functions like post-->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
@@ -110,7 +110,7 @@
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                    ${{ grand_total|floatformat:2 }}
+                                    €{{ grand_total|floatformat:2 }}
                                     {% else %}
                                     €0.00
                                     {% endif %}

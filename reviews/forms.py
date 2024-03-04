@@ -26,7 +26,7 @@ class ReviewForm(forms.ModelForm):
         widget=forms.Select(attrs={'class': 'form-control'}),
     )
     rating.label = mark_safe(
-        '<i class="fa-solid fa-star" style="color: #FFD43B;"></i> Star Rating'
+        '<i class="fa-solid fa-star" style="color: #ffaa3b;"></i> Star Rating'
     )
 
     content = forms.CharField(
@@ -37,5 +37,5 @@ class ReviewForm(forms.ModelForm):
     )
     content.label = mark_safe(
         '<i class="fa-solid fa-comment" \
-            style="color: #63E6BE;"></i> Leave a Review'
+            style="color: #504939;"></i> Review Now'
     )

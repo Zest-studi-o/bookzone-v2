@@ -11,12 +11,14 @@
 
 {% block content %}
 {% load crispy_forms_tags %}
+<!-- Overlay for white background with no image -->
+<div class ="overlay"></div>
 
 <div class="masthead">
     <div class="masthead-content">
         <div class="masthead-image">
             {% if "placeholder" in post.image.url %}
-            <img src="{{ MEDIA_URL }}placeholder.jpg" alt="Placeholder Image">
+            <img src="{{ MEDIA_URL }}placeholder.png" alt="Placeholder Image">
             {% else %}
             <img src="{{ post.image.url }}" alt="{{ post.title }}">
             {% endif %}
@@ -27,7 +29,7 @@
                 <h2 class="post-title">
                     {{ post.title }}
                 </h2>
-                <p class="post-subtitle text-white-50">{{ post.created_on}}</p> <!-- Display the post's created date -->
+                <p class="post-subtitle text-white-50">{{ post.created_on}}</p>
                 <p class="post-subtitle text-white-50">{{ post.section }}</p>
             </div>
         </div>

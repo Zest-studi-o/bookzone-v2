@@ -1,15 +1,15 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
-from django.contrib.auth.decorators import login_required
-from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from .models import Post
 from .forms import PostForm
+from django.contrib.auth.decorators import login_required
 
 
 class PostList(generic.ListView):
     """
-    List of post
+    List of posts
     """
 
     model = Post
@@ -26,6 +26,7 @@ class PostDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)  
         post = get_object_or_404(queryset, slug=slug)  
+        liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True  
 
@@ -40,10 +41,10 @@ class PostDetail(View):
 
     def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)  
-        post = get_object_or_404(queryset, slug=slug)  
+        post = get_object_or_404(queryset, slug=slug)
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
-            liked = True  
+            liked = True
 
         return render(
             request,
@@ -52,7 +53,7 @@ class PostDetail(View):
                 "post": post,
                 "liked": liked,
             },
-        )  
+        )
 
 
 class PostLike(View):
@@ -61,14 +62,14 @@ class PostLike(View):
     """
 
     def post(self, request, slug):
-        post = get_object_or_404(Post, slug=slug)  
+        post = get_object_or_404(Post, slug=slug)
 
         if post.likes.filter(id=request.user.id).exists():
-            post.likes.remove(request.user) 
+            post.likes.remove(request.user)
         else:
-            post.likes.add(request.user) 
+            post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))  
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
 @login_required
@@ -86,10 +87,10 @@ def add_post(request):
                 post = form.save(commit=False)
                 post.save()
                 form = PostForm()
-                messages.success(request, 'Successfully created post')
+                messages.success(request, 'The post was created successfully')
                 return redirect('post_detail', post.slug)
             else:
-                messages.error(request, 'Failed to add post. Please ensure the form is valid.')  # noqa E501
+                messages.error(request, 'Failed to create a post. Please ensure the fields are correct.')  # noqa E501
 
         template = 'blog/post_add.html'
         context = {
@@ -99,7 +100,7 @@ def add_post(request):
         return render(request, template, context)
 
     else:
-        messages.error(request, 'Sorry, only admins can do that.')
+        messages.error(request, 'Sorry, only administrators can do that.')
         return redirect(reverse('home'))
 
 
@@ -114,10 +115,10 @@ def update_post(request, slug):
             form = PostForm(request.POST, request.FILES, instance=post)
             if form.is_valid():
                 form.save()
-                messages.success(request, 'Successfully updated post!')
+                messages.success(request, 'The post was updated successfully!')
                 return redirect(reverse('blog'))
             else:
-                messages.error(request, 'Failed to update the post. Please ensure the form is valid.')  # noqa E501
+                messages.error(request, 'Failed to create a post. Please ensure the fields are correct.')
         else:
             form = PostForm(instance=post)
             messages.info(request, f'You are updating {post.title}')
@@ -130,7 +131,7 @@ def update_post(request, slug):
 
         return render(request, template, context)
     else:
-        messages.error(request, 'Sorry, only admins can do that.')
+        messages.error(request, 'Sorry, only administrators can do that.')
         return redirect(reverse('home'))
 
 
@@ -138,10 +139,11 @@ def update_post(request, slug):
 def delete_post(request, slug):
     """ To delete a post """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only admins can do that.')
+        messages.error(request, 'Sorry, only administrators can do that.')
         return redirect(reverse('home'))
 
     post = get_object_or_404(Post, slug=slug)
     post.delete()
-    messages.success(request, 'Post deleted!')
+    messages.success(request, 'The post was deleted successfully!')
     return redirect(reverse('blog'))
+    

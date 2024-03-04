@@ -71,7 +71,7 @@
                         </a>
                         {% else %}
                         <a href="{% url 'book_detail' book.id %}">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.title }}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}placeholder.png" alt="{{ book.title }}">
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">
@@ -91,9 +91,9 @@
                                     {% endif %}
 
                                     {% if book.average_rating %}
-                                        <small class="text-muted"><i class="fa-solid fa-star" style="color: #FFD43B;"></i> {{ book.average_rating }} / 5</small>
+                                        <small class="text-muted"><i class="fa-solid fa-star" style="color: #ffaa3b;"></i> {{ book.average_rating }} / 5</small>
                                     {% else %}
-                                        <small class="text-muted"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>0 / 5</small>
+                                        <small class="text-muted"><i class="fa-solid fa-star" style="color: #ffaa3b;"></i>0 / 5</small>
                                     {% endif %}
                                 </div>
                             </div>
