@@ -144,7 +144,7 @@ def book_detail(request, book_id):
 @login_required
 def wishlist(request, sku, *args, **kwargs):
     """
-    book whislist
+    Book wishlist
     """
     book_wish = get_object_or_404(Book, sku=sku)
     user = request.user
@@ -174,7 +174,6 @@ def wishlist(request, sku, *args, **kwargs):
             'liked': liked
         }
     )
-
 
 @login_required
 def add_book(request):
@@ -272,9 +271,6 @@ def delete_book(request, book_id):
         return HttpResponseBadRequest('Invalid request')
 
 
-
-
-
 @login_required
 def admin_books(request):
     """
@@ -293,6 +289,3 @@ def admin_books(request):
         'books': books
     }
     return render(request, 'books/admin_books.html', context)
-
-
-
