@@ -1,14 +1,11 @@
-from . import views
 from django.urls import path
-from django.contrib.auth.decorators import login_required
+from reviews import views
 
 urlpatterns = [
-    path('', views.ReviewList.as_view(), name='reviews'),
+    # Url path to reviews template
     path(
-        'add-review/<str:order_number>/',
-        login_required(views.ReviewCreateView.as_view()),
-        name='add_review'
+        'book/<int:book_id>/reviews/',
+        views.book_reviews,
+        name='book_reviews'
     ),
-    path('update-review/<int:review_id>/', views.update_review, name='update_review'),  # noqa E501
-    path('delete-review/<int:pk>/', views.DeleteReview.as_view(), name='delete_review'),  # noqa E501
 ]

@@ -1,38 +1,48 @@
 from django.db import models
-#from django.contrib.auth.models import User
-from checkout.models import Order
+from django.db.models.signals import post_save, post_delete
+from django.dispatch import receiver
+from django.db.models import Avg
 from books.models import Book
-from django.core.validators import MinValueValidator, MaxValueValidator
-import bleach
 #to import the custom user
 from django.conf import settings
-
-STATUS = ((0, "Draft"), (1, "Published"))
+from checkout.models import Order
 
 class Review(models.Model):
-    review_title = models.CharField(max_length=200, unique=True)
-    book_reviewed = models.ForeignKey(Book, on_delete=models.CASCADE)
-    date_created = models.DateTimeField(auto_now_add=True)
-    date_updated = models.DateTimeField(auto_now=True)
-    reviewer = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=0)
+    """
+    Review for the books,
+    the reviewer is the user who
+    can add a rating and leave a comment
+    """
+    book = models.ForeignKey(
+        Book,
+        on_delete=models.CASCADE,
+        related_name='reviews', null=True
+    )
+    reviewer = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE
+    )
+    order = models.ForeignKey(
+        Order, null=True,
+        on_delete=models.SET_NULL,
+        default=None
+    )
+    rating = models.PositiveIntegerField(default=0)
     content = models.TextField()
-    order = models.OneToOneField(Order, on_delete=models.CASCADE, related_name='order', unique=True) 
-    rating = models.IntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(5)])
-    date = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
+    date_created = models.DateTimeField(auto_now_add=True)
 
-    """
     def __str__(self):
-        
-        return f'Review by {self.reviewer.username} for {self.book.review_title}'
-    """
+        return f"Review for {self.book.title} by {self.reviewer}"
+
     def save(self, *args, **kwargs):
-        self.content = bleach.clean(self.content, tags=[], attributes={}, protocols=[], strip=True)  # noqa E501
-        super(Review, self).save(*args, **kwargs)
+        super().save(*args, **kwargs)
+        self.book.update_rating()
 
-    class Meta:
-        ordering = ['-date_created']
 
-    def __str__(self):
-        return self.review_title
+@receiver(post_save, sender=Review)
+@receiver(post_delete, sender=Review)
+def update_book_rating(sender, instance, **kwargs):
+    """
+    To update the reviews when deleted or updated
+    """
+    instance.book.update_rating()

@@ -1,15 +1,16 @@
 from django.contrib import admin
 from .models import Review
-from django_summernote.admin import SummernoteModelAdmin
 
 
-@admin.register(Review)
-class ReviewAdmin(SummernoteModelAdmin):
+class ReviewAdmin(admin.ModelAdmin):
     """
     Register the 'Review' model with the admin site
+    Filters the reviews
     """
+    #list_display = ('book_reviewed', 'reviewer', 'rating', 'date_created')
+    #list_filter = ('book_reviewed', 'date_created')
+    search_fields = ('reviewer', 'content')
+    date_hierarchy = 'date_created'
 
-    list_display = ('review_title', 'status', 'date_created')
-    search_fields = ['review_title', 'content']
-    list_filter = ('status', 'date_created')
-    summernote_fields = ('content')
+
+admin.site.register(Review, ReviewAdmin)

@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
-
+from django.db.models import Avg
 
 # Custom models
 class CustomUser(AbstractUser):
@@ -22,6 +22,34 @@ class Book(models.Model):
     image = models.ImageField(upload_to='book_images/', blank=True, null=True)
     upload_date = models.DateTimeField(auto_now_add=True)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    wishlist = models.ManyToManyField(
+        CustomUser,
+        related_name='wishlist_item',
+        blank=True
+    )
+
+    def calculate_average_rating(self):
+        """
+        Average rating based on reviews
+        """
+        reviews = self.reviews.all()
+        if reviews:
+            total_rating = sum(review.rating for review in reviews)
+            average_rating = total_rating / len(reviews)
+            return round(average_rating, 2)
+        else:
+            return 1
+
+    def update_rating(self):
+        """
+        Updates the rating based on reviews
+        """
+        average_rating = self.reviews.aggregate(Avg('rating'))['rating__avg']
+        if average_rating is not None:
+            self.rating = round(average_rating, 2)
+        else:
+            self.rating = 0
+        self.save()
 
     def __str__(self):
         return self.title
@@ -50,8 +78,8 @@ class Transaction(models.Model):
         
 # Used for admin review
 class Review(models.Model):
-    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='reviews')
-    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='reviews')
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='review')
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='user_review')
     content = models.TextField()
     rating = models.IntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(5)])
