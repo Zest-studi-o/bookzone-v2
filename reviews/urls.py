@@ -8,4 +8,5 @@ urlpatterns = [
         views.book_reviews,
         name='book_reviews'
     ),
+
 ]

@@ -142,40 +142,6 @@ def book_detail(request, book_id):
 
 
 @login_required
-def wishlist(request, sku, *args, **kwargs):
-    """
-    Book wishlist
-    """
-    book_wish = get_object_or_404(Book, sku=sku)
-    user = request.user
-    user_profile = user.userprofile
-
-    liked = False
-
-    if book_wish.wishlist.filter(id=request.user.id).exists():
-        book_wish.wishlist.remove(request.user)
-        user_profile.wishlist.remove(book_wish)
-        messages.success(
-            request,
-            f'Successfully removed {book_wish} to Wishlist!'
-        )
-        liked = False
-    else:
-        book_wish.wishlist.add(request.user)
-        user_profile.wishlist.add(book_wish)
-        messages.success(
-            request, f'Successfully added {book_wish} to Wishlist!'
-        )
-        liked = True
-
-    return JsonResponse(
-        {
-            'wishlist_count': book_wish.wishlist.count(),
-            'liked': liked
-        }
-    )
-
-@login_required
 def add_book(request):
     """
     Add a book to the store.

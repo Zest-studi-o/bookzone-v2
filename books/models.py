@@ -22,11 +22,7 @@ class Book(models.Model):
     image = models.ImageField(upload_to='book_images/', blank=True, null=True)
     upload_date = models.DateTimeField(auto_now_add=True)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    wishlist = models.ManyToManyField(
-        CustomUser,
-        related_name='wishlist_item',
-        blank=True
-    )
+
 
     def calculate_average_rating(self):
         """

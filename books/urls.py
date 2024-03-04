@@ -12,11 +12,7 @@ urlpatterns = [
         views.book_detail,
         name='book_detail'
     ),
-    path(
-        'books/<str:sku>/like/',
-        views.wishlist,
-        name='wishlist'
-    ),
+
     path(
         'add/',
         views.add_book,

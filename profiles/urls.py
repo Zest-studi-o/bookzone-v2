@@ -12,9 +12,5 @@ urlpatterns = [
         views.order_history,
         name='order_history'
     ),
-    path(
-        'wishlist',
-        views.wishlist,
-        name='wishlist'
-    ),
+
 ]

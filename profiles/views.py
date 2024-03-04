@@ -50,20 +50,4 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
-
-
-@login_required
-def wishlist(request):
-    """
-    Displays the wishlist
-    """
-    profile = get_object_or_404(UserProfile, user=request.user)
-    wishlist = profile.wishlist.all()
-
-    template = 'profiles/wishlist.html'
-    context = {
-        'wishlist': wishlist,
-        'profile': profile,
-    }
-
-    return render(request, template, context)
+    

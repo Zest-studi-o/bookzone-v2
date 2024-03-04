@@ -150,8 +150,8 @@
                                 {% if has_reviewed %}
                                     <p class="text-black">You already review the book <i class="fa-regular fa-face-smile" style="color: #FFD43B;"></i></p>
                                 {% else %}
-                                    <p class="lead mt-2">You purchased the book. Would you like to leave a review?</p>
-                                    <a href="{% url 'book_reviews' book_id=book.id %}" class="btn btn-info">Leave a Review</a>
+                                    <p class="lead mt-2">You purchased the book. Would you like to review it?</p>
+                                    <a href="{% url 'book_reviews' book_id=book.id %}" class="btn btn-info">Review Now</a>
                                 {% endif %}
                             {% else %}
                                 <p class="lead mt-2">You must purchase this book to leave a review!</p>
@@ -183,5 +183,4 @@
 </script>
 
 {% include 'books/includes/quantity_input_script.html' %}
-{% include 'books/includes/wishlist_script.html' %}
 {% endblock %}
