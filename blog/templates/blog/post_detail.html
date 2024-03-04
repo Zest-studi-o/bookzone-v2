@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="masthead">
+    <div class="masthead-content">
+        <div class="masthead-image">
+            {% if "placeholder" in post.image.url %}
+            <img src="{{ MEDIA_URL }}placeholder.jpg" alt="Placeholder Image">
+            {% else %}
+            <img src="{{ post.image.url }}" alt="{{ post.title }}">
+            {% endif %}
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="masthead-text">
+            <div class="masthead-text-inner">
+                <h2 class="post-title">
+                    {{ post.title }}
+                </h2>
+                <p class="post-subtitle text-white-50">{{ post.created_on}}</p> <!-- Display the post's created date -->
+                <p class="post-subtitle text-white-50">{{ post.section }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col mb-4 mt-3 left top">
+            <div class="card-body">
+
+                <div class="card-text">{{ post.content | safe }}</div>
+                <div class="row">
+                    <div class="col-1">
+                        {% if user.is_authenticated %}
+                        <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                            <!-- Form for likes for the post -->
+                            {% csrf_token %}
+                            {% if liked %}
+                            <!-- Display the like button -->
+                            <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                    class="fa-solid fa-thumbs-up"></i></button>
+                            {% else %}
+                            <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                    class="fa-regular fa-thumbs-up"></i></button>
+                            {% endif %}
+                        </form>
+                        {% else %}
+                        <span class="text-secondary"><i class="fa-regular fa-thumbs-up"></i></span>
+                        <!--  Like icon for unauthenticated users -->
+                        {% endif %}
+                        <span class="text-secondary">{{ post.number_of_likes }}</span>
+                        <!-- Number of likes for the post -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr> 
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
