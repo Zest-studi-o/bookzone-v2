@@ -178,7 +178,7 @@ def add_book(request):
 @login_required
 def edit_book(request, book_id):
     """
-    Edit a book
+    Edit a book by the admin
     """
     if not request.user.is_superuser:
         messages.error(

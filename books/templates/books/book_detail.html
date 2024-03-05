@@ -61,6 +61,21 @@
                     </a>
                 </p>
                 {% endif %}
+
+                <!-- Display book condition -->
+                <p class="small mt-1 mb-0">
+                    <a class="text-muted">
+                        <i class="fa-solid fa-book"></i>  Condition: {{ book.condition}}
+                    </a>
+                </p>
+
+                 <!-- Display seller' user name -->
+                 <p class="small mt-1 mb-0">
+                    <a class="text-muted">
+                        <i class="fa-solid fa-business-time"></i>   Seller: {{ book.seller}}
+                    </a>
+                </p>
+
                 <!-- If there is average rating -->
                 {% if average_rating %}
                     <small class="text-muted"><i class="fa-solid fa-star" style="color: #ffaa3b;"></i> {{ average_rating }} / 5</small>

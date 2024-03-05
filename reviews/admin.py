@@ -4,11 +4,11 @@ from .models import Review
 
 class ReviewAdmin(admin.ModelAdmin):
     """
-    Register the 'Review' model with the admin site
-    Filters the reviews
+    Allows the admin to edit reviews in the admin panel
+    & also to filter them
     """
-    #list_display = ('book_reviewed', 'reviewer', 'rating', 'date_created')
-    #list_filter = ('book_reviewed', 'date_created')
+    list_display = ('book', 'reviewer', 'rating', 'date_created')
+    list_filter = ('book', 'date_created')
     search_fields = ('reviewer', 'content')
     date_hierarchy = 'date_created'
 

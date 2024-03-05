@@ -214,6 +214,8 @@ In the future, I would like to:
 
 - Add a barcode scanner that can read the book iban and add it to the database.
 - I would like the app to allow users to also sell their second-hand books.
+- A FAQ section to find all frequently asked questions
+- Add a contact us form for the user to enquiry
 
 ---
 
