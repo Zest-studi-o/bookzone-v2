@@ -32,9 +32,13 @@
             <form method="POST" action="{% url 'edit_book' book.id %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
+
                 <div class="text-right mb-4">
-                    <a class="btn main-clr-thm" href="{% url 'books' %}">Cancel</a>
-                    <button class="btn main-clr-thm" type=" submit">Update Book Details</button>
+                       <!-- Go back button -->
+                    <a href="{% url 'blog'%}" class="btn btn-outline-black text-uppercase"><span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>Cancel</a>
+                    <a href="{% url 'book_reviews' book_id=book.id %}" class="btn text-uppercase color: #ffaa3b" style="background-color: #ffaa3b;">Update Book</a>
                 </div>
             </form>
         </div>

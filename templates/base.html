@@ -21,6 +21,13 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+    <!-- Fav icon -->
     <link rel="icon" href="{% static 'favicon.svg' %}" type="image/x-icon">
     {% endblock %}
 
@@ -62,7 +69,7 @@
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>Book</strong>Zone</h2>
+                    <h2 class="custom-logo-1 text-black">Book <span class="custom-logo-2">Zone</span></h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">

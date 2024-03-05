@@ -1,6 +1,6 @@
 # BOOKZONE
 
-![Bookzone](docs/readme/project-mockup.jpg)
+![Bookzone](docs/readme/aimresponsive.png)
 
 A web application that enables users to sell, and buy second-hand books.
 
@@ -128,10 +128,11 @@ blabla
 ![Colour palette](docs/readme/colour-palette.png)
 
 ### Typography
-Typography chones:
+Typography choices:
 
-- [Roboto](https://fonts.google.com/specimen/Roboto)
-- [Dancing Script](https://fonts.google.com/specimen/Dancing+Script)
+- For body copy I used [Nanum Gothic Coding](https://fonts.google.com/selection?classification=Monospace&stroke=Sans+Serif)
+
+- For the logo I used [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
 
 ### Imagery
 
@@ -214,8 +215,9 @@ In the future, I would like to:
 
 - Add a barcode scanner that can read the book iban and add it to the database.
 - I would like the app to allow users to also sell their second-hand books.
-- A FAQ section to find all frequently asked questions
-- Add a contact us form for the user to enquiry
+- A FAQ section to find all frequently asked questions.
+- Add a contact us form for the user to enquiry.
+- Add a currency convertor and different places to shop from.
 
 ---
 

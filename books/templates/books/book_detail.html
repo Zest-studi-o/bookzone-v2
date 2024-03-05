@@ -163,16 +163,16 @@
                         {% if user.is_authenticated %}
                             {% if has_ordered_book %}
                                 {% if has_reviewed %}
-                                    <p class="text-black">You already review the book</i></p>
+                                    <p class="text-black">You already reviewed the book!</i></p>
                                 {% else %}
                                     <p class="lead mt-2">You purchased the book. Would you like to review it?</p>
                                     <a href="{% url 'book_reviews' book_id=book.id %}" class="btn text-uppercase color: #ffaa3b" style="background-color: #ffaa3b;">Review Now</a>
                                 {% endif %}
                             {% else %}
-                                <p class="lead mt-2">You must purchase this book to leave a review!</p>
+                                <p class="lead mt-2">You have to buy the book to review!</p>
                             {% endif %}
                         {% else %}
-                            <p class="lead mt-2">You must be logged in to leave a review.</p>
+                            <p class="lead mt-2">You must be logged in to review!</p>
                         {% endif %}
                     </div>
                 </div>
@@ -185,13 +185,9 @@
 {% block postloadjs %}
 {{ block.super }}
 <script>
-    /* global $ */
-    // Confirm delete
     function confirmDelete(event, bookName, bookId) {
-        event.preventDefault(); // Prevent default form submission behavior
-        // Confirmation with the book name
+        event.preventDefault();
         if (confirm(`Are you sure you want to delete ${bookName}?`)) {
-            // It submits the form to delete if the user confirms it
             document.getElementById(`delete-form-${bookId}`).submit();
         }
     }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nanum+Gothic+Coding&display=swap')
+
 html {
     height: 100%;
 }
@@ -7,10 +9,11 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -19,18 +22,22 @@ body {
     width: 1.5rem;
 }
 
+/* Logo font */
 .logo-font {
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
-.main-logo-link {
-    width: fit-content;
+.custom-logo-1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
+.custom-logo-2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .btn-black {
@@ -124,7 +131,6 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0;
     height: 0;
