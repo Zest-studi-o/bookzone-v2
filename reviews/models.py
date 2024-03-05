@@ -3,9 +3,11 @@ from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 from django.db.models import Avg
 from books.models import Book
+from checkout.models import Order
+from django.core.validators import MaxValueValidator, MinValueValidator
 #to import the custom user
 from django.conf import settings
-from checkout.models import Order
+
 
 class Review(models.Model):
     """
@@ -27,7 +29,13 @@ class Review(models.Model):
         on_delete=models.SET_NULL,
         default=None
     )
-    rating = models.PositiveIntegerField(default=0)
+    rating = models.PositiveIntegerField(
+        default=0,
+        validators=[
+            MaxValueValidator(5),
+            MinValueValidator(0)
+        ]
+     )
     content = models.TextField()
     date_created = models.DateTimeField(auto_now_add=True)
 
