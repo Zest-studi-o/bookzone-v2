@@ -9,9 +9,10 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: "Nanum Gothic Coding", monospace;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal
 }
 
 .icon {
@@ -28,16 +29,10 @@ body {
     font-weight: bolder;
 }
 
-.custom-logo-1 {
+.custom-logo {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
-    font-style: italic;
-}
-
-.custom-logo-2 {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: italic;
+    font-style: normal;
 }
 
 .btn-black {

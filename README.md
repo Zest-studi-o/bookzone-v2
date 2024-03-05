@@ -130,9 +130,9 @@ blabla
 ### Typography
 Typography choices:
 
-- For body copy I used [Nanum Gothic Coding](https://fonts.google.com/selection?classification=Monospace&stroke=Sans+Serif)
+- For body copy I used an easy to read sanserif font [Montserrat](https://fonts.google.com/specimen/Montserrat)
 
-- For the logo I used [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
+- For the logo I used a display elegant font [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
 
 ### Imagery
 
