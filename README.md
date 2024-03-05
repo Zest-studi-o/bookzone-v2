@@ -2,7 +2,7 @@
 
 ![Bookzone](docs/readme/aimresponsive.png)
 
-A web application that enables users to sell, and buy second-hand books.
+A web application that enables users to buy second-hand books.
 
 Visit the live site: [Bookzone](https://bookzone-dbc6fd65e384.herokuapp.com/)
 

@@ -5,7 +5,7 @@ from django.db.models import Avg
 from books.models import Book
 from checkout.models import Order
 from django.core.validators import MaxValueValidator, MinValueValidator
-#to import the custom user
+# to import the custom user
 from django.conf import settings
 
 

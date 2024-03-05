@@ -145,7 +145,6 @@ def book_detail(request, book_id):
 def add_book(request):
     """
     Add a book to the store.
- 
     """
     if not request.user.is_superuser:
         messages.error(

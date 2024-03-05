@@ -2,9 +2,9 @@
 
 ![Bookzone](docs/readme/aimresponsive.png)
 
-A web application that enables users to sell, and buy second-hand books.
+A web application that enables users to buy second-hand books.
 
-Visit the live site: [Bookzone]()
+Visit the live site: [Bookzone](https://bookzone-dbc6fd65e384.herokuapp.com/)
 
 ## CONTENTS
 
@@ -31,10 +31,11 @@ Automated testing was carried out at a later stage using validators and all erro
 
 I used [Python Linter - Pep8CI](https://pep8ci.herokuapp.com/) to test python code, most errors were fixed which were related to spacing or lines length.
 
-![Python Linter](docs/testing/python/python-linter-example.png)
+![Python Linter Example 1](docs/testing/python/python-linter-example.png)
+![Python Example2](docs/testing/python/python-linter-example2.jpg)
 
 Some long line errors remained due to the impossibility of splitting up lines of code that would stop working otherwise or in build django code for example some lines at setting.py
-![Python Linter](docs/testing/python/settings.png)
+![Python Linter](docs/testing/python/settings.jpg)
 
 ### Lighthouse
 
@@ -54,8 +55,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ##### Login
 ![Login Desktop](docs/testing/lighthouse/desktop/lh-login-desktop.jpg)<br><br>
 
-##### Contact
-![Contact Desktop](docs/testing/lighthouse/desktop/lh-contact-desktop.png)<br><br>
++*
 
 
 #### Mobile Results
@@ -64,6 +64,8 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ![Home Mobile](docs/testing/lighthouse/mobile/lh-contact-mobile.png)<br><br>
 
 ##### Books
+Examples of lighthouse results are as follows:
+
 ![Books Mobile](docs/testing/lighthouse/mobile/lh-menu-mobile.png)<br><br>
 
 ##### Sing up
@@ -72,20 +74,18 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ##### Login
 ![Login Mobile](docs/testing/lighthouse/mobile/lh-login-mobile.jpg)<br><br>
 
-##### Contact
-![Contact Mobile](docs/testing/lighthouse/mobile/lh-contact-mobile.png)<br><br>
 
 ---
 ### Jigsaw CSS Validator
 
-I used [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to test styles.css and found no issues.
-![Jigsaw CSS Validator](docs/testing/w3-css/w3-validator.png)
+I used [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to test styles.css and found errors, only some minor warnings.
+![Jigsaw CSS Validator](docs/testing/css/css-jigsaw.jpg)
 
 ---
 ### W3 Html Validator
 
-I used [W3 Html Validator](https://validator.w3.org/) to test all html pages and found no issues.
-![Jigsaw CSS Validator](docs/testing/w3-html/html-validator.png)
+I used [W3 Html Validator](https://validator.w3.org/) to test all html pages and found no issues
+![Jigsaw CSS Validator](docs/testing/css/css-jigsaw.jpg)
 
 ---
 ## MANUAL TESTING
@@ -110,6 +110,8 @@ I used [W3 Html Validator](https://validator.w3.org/) to test all html pages and
 By testing all these features, it can be affirmed that the user story is accomplished.
 * **Outcome:** Pass or Fail
 
++
+´`+ç`76x
 
 #### 1C: As a user, I want the website to have a nice and intuitive design that will match the bookstore's theme
 * **Acceptance Criteria:**  A site user should be able to access the content through an attractive design that would make him want to return to it anytime.
@@ -311,7 +313,7 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 | ID  | CLASS | FEATURE/SECTION                 | SUMMARY                                                                                                                                                                                                                            | STEPS TO REPRODUCE                                                                                                                                                                           | ACTUAL RESULT                                                               | EXPECTED RESULT                                 | ACTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | STATUS                          |
 | --- | ----- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| 1   | C     | Text Display |Line breaks not taking effect  | Go to the website > Click on any book to see the description > Observe the issue with the line breaks not being displayed     |The text where a line break is expected it is showing all in one the same line instead ![Actual Result](docs/testing/1/bug1-5.png) ![Actual Result 2](docs/testing/1/bug-1.png)|Please ensure that a line break is added where is expected ![Line Break code 1](docs/testing/1/bug-1-2.png) ![Line Break code 2](docs/testing/1/bug1-4.png)|Added the following code to the book_detail.html template ![Before](docs/testing/1/bug-1-3.png)![Solution](docs/testing/1/bug1-6.png)| FIXED|
+| 1   | C     | Text Display |Line breaks not taking effect  | Go to the website > Click on any book to see the description > Observe the issue with the line breaks not being displayed     |The text where a line break is expected it is showing all in one the same line instead ![Actual Result](docs/testing/bugs/1/bug1-5.png) ![Actual Result 2](docs/testing/bugs/1/bug-1.png)|Please ensure that a line break is added where is expected ![Line Break code 1](docs/testing/bugs/1/bug-1-2.png) ![Line Break code 2](docs/testing/bugs/1/bug1-4.png)|Added the following code to the book_detail.html template ![Before](docs/testing/bugs//1/bug-1-3.png)![Solution](docs/testing/bugs/1/bug1-6.png)| FIXED|
 
 
 ### Known Bugs

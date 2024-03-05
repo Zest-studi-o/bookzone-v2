@@ -1,5 +1,5 @@
 from django.db import models
-#to import the custom user
+# to import the custom user
 from django.conf import settings
 
 # Choices for the 'status' field
@@ -23,13 +23,14 @@ class Post(models.Model):
     image = models.ImageField(null=True, blank=True, default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)
     slug = models.SlugField(max_length=200, unique=True)
-    likes = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='blog_likes', blank=True)
+    likes = models.ManyToManyField(settings.AUTH_USER_MODEL,
+                                   related_name='blog_likes', blank=True)
 
     class Meta:
-        ordering = ['-created_on'] 
+        ordering = ['-created_on']
 
     def __str__(self):
-        return self.title  
+        return self.title
 
     def number_of_likes(self):
-        return self.likes.count()  
+        return self.likes.count()

@@ -14,7 +14,7 @@ import os
 import dj_database_url
 from pathlib import Path
 if os.path.exists("env.py"):
-  import env
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,7 +32,7 @@ DEBUG = 'DEBUG' in os.environ
 ALLOWED_HOSTS = [
     '8000-zeststudio-bookzone-k18d38paw1h.ws-eu108.gitpod.io',
     '8000-zeststudio-p05bookzone-goau5ijk38u.ws-eu108.gitpod.io',
-     os.environ.get('HEROKU_HOSTNAME'),
+    os.environ.get('HEROKU_HOSTNAME'),
     'localhost',
 ]
 
@@ -72,7 +72,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-   
+
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -90,14 +90,15 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', #required by allauth
-                'django.contrib.auth.context_processors.auth', 
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                # required by allauth
                 'django.contrib.messages.context_processors.messages',
-                #to access media file for a book with no image
-                'django.template.context_processors.media', 
+                # to access media file for a book with no image
+                'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
             ],
-             'builtins': [
+            'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
                 'crispy_forms.templatetags.crispy_forms_field',
             ]
@@ -222,7 +223,7 @@ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
-# Email 
+# Email
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'bookzone@example.com'

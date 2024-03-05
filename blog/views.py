@@ -13,9 +13,9 @@ class PostList(generic.ListView):
     """
 
     model = Post
-    queryset = Post.objects.filter(status=1).order_by('-created_on')  
-    template_name = 'blog/blog.html'  
-    paginate_by = 6  
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'blog/blog.html'
+    paginate_by = 6
 
 
 class PostDetail(View):
@@ -24,11 +24,11 @@ class PostDetail(View):
     """
 
     def get(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.filter(status=1)  
-        post = get_object_or_404(queryset, slug=slug)  
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
-            liked = True  
+            liked = True
 
         return render(
             request,
@@ -37,10 +37,10 @@ class PostDetail(View):
                 "post": post,
                 "liked": liked,
             },
-        )  
+        )
 
     def post(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.filter(status=1)  
+        queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
@@ -118,7 +118,9 @@ def update_post(request, slug):
                 messages.success(request, 'The post was updated successfully!')
                 return redirect(reverse('blog'))
             else:
-                messages.error(request, 'Failed to create a post. Please ensure the fields are correct.')
+                messages.error(
+                    request, 'Failed to create a post.'
+                             'Please ensure the fields are correct.')
         else:
             form = PostForm(instance=post)
             messages.info(request, f'You are updating {post.title}')
@@ -146,4 +148,3 @@ def delete_post(request, slug):
     post.delete()
     messages.success(request, 'The post was deleted successfully!')
     return redirect(reverse('blog'))
-    
