@@ -123,7 +123,8 @@ The database schema shows the structure of the database, the type and their rela
 ![Database Schema](docs/readme/P05-database-schema.jpg)
 
 ### Colour Palette
-blabla
+The colour palette uses mainly black and white with some shades of grey, also used a shade of orange for the star and some buttons.
+Those colours convey elegance and refinement.
 
 ![Colour palette](docs/readme/colour-palette.png)
 
@@ -143,13 +144,28 @@ The images are taken from the royalty-free sites credited [here](#Credits).
 Wireframes for desktop, tablet and mobile versions are as follows:
 
 - Home 
-![Home](docs/readme/wf/home.jpg)
+![Home](docs/readme/wf/P05-wf-home.png)
+
+- Books
+![Home](docs/readme/wf/P05-wf-books)
+
+- Books Detail
+![Home](docs/readme/wf/P05-wf-books-detail.png)
+
+- Blog 
+![Home](docs/readme/wf/P05-wf-blog.png)
 
 #### Existing Features
 
-**Fav Icon**
+**Logo**
 
 - The website's visual identity.
+
+![Fav Icon](docs/readme/features/logo.jpg)
+
+**Fav Icon**
+
+- The website's favicon.
 
 ![Fav Icon](docs/readme/features/favicon.jpg)
 
@@ -173,7 +189,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 **Filters**
 
-- The website include filters for searching and sorting books.
+- The website includes filters for searching and sorting books.
 
 ![Filters](docs/readme/features/filters.jpg)
 
@@ -181,7 +197,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 - All books - A list of the books is displayed on this page.
 
-![Books List](docs/readme/features/all-books.jpg)
+![Books List](docs/readme/features/books-page.jpg)
 
 **User Crud**
 
@@ -206,6 +222,13 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 - The user receives feedback providing messages with relevant information such as when they update a book in their bag seen in the example bellow:
 
 ![User feedback](docs/readme/features/user-feedback.jpg)
+
+
+**Reviews**
+
+- After purchasing a book the user can leave a review for the purchased item, and the admin has full CRUD functionality rights.
+
+![User feedback](docs/readme/features/reviews.jpg)
 
 ---
 

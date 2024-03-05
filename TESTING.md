@@ -110,8 +110,8 @@ I used [W3 Html Validator](https://validator.w3.org/) to test all html pages and
 By testing all these features, it can be affirmed that the user story is accomplished.
 * **Outcome:** Pass or Fail
 
-+
-´`+ç`76x
+
+
 
 #### 1C: As a user, I want the website to have a nice and intuitive design that will match the bookstore's theme
 * **Acceptance Criteria:**  A site user should be able to access the content through an attractive design that would make him want to return to it anytime.
