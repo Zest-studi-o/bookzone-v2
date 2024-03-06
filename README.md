@@ -114,7 +114,7 @@ I've decomposed my Epics into stories prior to prioritizing and implementing the
 
 ### Flowchart
 
-![Flowchart](docs/readme/P05-flowchart.jpeg)
+![Flowchart](docs/readme/flowchart.jpg)
 
 ### Database Schema
 The database schema shows the structure of the database, the type and their relationship. This schema was done using
@@ -150,10 +150,10 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 ![Books](docs/readme/wf/P05-wf-books.png)
 
 - Books Detail
-![Home](docs/readme/wf/P05-wf-books-detail.png)
+![Books Detail](docs/readme/wf/P05-wf-books-detail.png)
 
 - Blog 
-![Home](docs/readme/wf/P05-wf-blog.png)
+![Blog](docs/readme/wf/P05-wf-blog.png)
 
 #### Existing Features
 
