@@ -47,31 +47,27 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ![Home Desktop](docs/testing/lighthouse/desktop/lh-home-desktop.jpg)<br><br>
 
 ##### Books
-![Menu Desktop](docs/testing/lighthouse/desktop/lh-menu-desktop.png)<br><br>
+![Books Desktop](docs/testing/lighthouse/desktop/lh-menu-desktop.png)<br><br>
 
-##### Sing up
-![Sign Up Desktop](docs/testing/lighthouse/desktop/lh-signup-desktop.jpg)<br><br>
+##### Books Detail
+![Book detail Desktop](docs/testing/lighthouse/desktop/lh-signup-desktop.jpg)<br><br>
 
 ##### Login
-![Login Desktop](docs/testing/lighthouse/desktop/lh-login-desktop.jpg)<br><br>
-
-
+![Blog Desktop](docs/testing/lighthouse/desktop/lh-login-desktop.jpg)<br><br>
 
 #### Mobile Results
 
 ##### Home
-![Home Mobile](docs/testing/lighthouse/mobile/lh-contact-mobile.png)<br><br>
+![Home Desktop](docs/testing/lighthouse/desktop/lh-home-desktop.jpg)<br><br>
 
 ##### Books
-Examples of lighthouse results are as follows:
+![Books Desktop](docs/testing/lighthouse/desktop/lh-menu-desktop.png)<br><br>
 
-![Books Mobile](docs/testing/lighthouse/mobile/lh-menu-mobile.png)<br><br>
-
-##### Sing up
-![Sign Up Mobile](docs/testing/lighthouse/mobile/lh-signup-mobile.jpg)<br><br>
+##### Books Detail
+![Book detail Desktop](docs/testing/lighthouse/desktop/lh-signup-desktop.jpg)<br><br>
 
 ##### Login
-![Login Mobile](docs/testing/lighthouse/mobile/lh-login-mobile.jpg)<br><br>
+![Blog Desktop](docs/testing/lighthouse/desktop/lh-login-desktop.jpg)<br><br>
 
 
 ---
@@ -294,12 +290,12 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 |  | A logged-in user can sign out successfully. | Pass |
 |  | The website displays an appropriate error message when a user enters invalid data (e.g., date before current day, not allowed charset). | Pass |
 |  | A user cannot edit or delete another user's profile | Pass |
-|Books CRUD | Verify that a logged-in user can create, edit delete his own books. | Pass |
+|Books CRUD | Verify that a logged-in user can create, edit delete books from the shopping cart | Pass |
 |  | Confirmation message is displayed when changes are saved | Pass |
 |  | User is asked for confirmation before deleting books| Pass |
 |  | Click on delete confirmation button deletes books | Pass  |
 |  | A user can delete own books | Pass |
-|  | Only authenticated users can book reservations | Pass |
+|  | Only authenticated users can leave reviews | Pass |
 |  | Confirmation message is displayed when a book is updated or deleted | Pass |
 |Menu| A logged-in admin can add, edit or delete books | Pass |
 
@@ -312,7 +308,10 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 | ID  | CLASS | FEATURE/SECTION                 | SUMMARY                                                                                                                                                                                                                            | STEPS TO REPRODUCE                                                                                                                                                                           | ACTUAL RESULT                                                               | EXPECTED RESULT                                 | ACTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | STATUS                          |
 | --- | ----- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| 1   | C     | Text Display |Line breaks not taking effect  | Go to the website > Click on any book to see the description > Observe the issue with the line breaks not being displayed     |The text where a line break is expected it is showing all in one the same line instead ![Actual Result](docs/testing/bugs/1/bug1-5.png) ![Actual Result 2](docs/testing/bugs/1/bug-1.png)|Please ensure that a line break is added where is expected ![Line Break code 1](docs/testing/bugs/1/bug-1-2.png) ![Line Break code 2](docs/testing/bugs/1/bug1-4.png)|Added the following code to the book_detail.html template ![Before](docs/testing/bugs//1/bug-1-3.png)![Solution](docs/testing/bugs/1/bug1-6.png)| FIXED|
+| 1   | C     | Book Details |Text Display/Line breaks not taking effect  | Go to the website > Click on any book to see the description > Observe the issue with the line breaks not being displayed     |The text where a line break is expected it is showing all in one the same line instead ![Actual Result](docs/testing/bugs/1/bug1-5.png) ![Actual Result 2](docs/testing/bugs/1/bug-1.png)|Please ensure that a line break is added where is expected ![Line Break code 1](docs/testing/bugs/1/bug-1-2.png) ![Line Break code 2](docs/testing/bugs/1/bug1-4.png)|Added the following code to the book_detail.html template ![Before](docs/testing/bugs//1/bug-1-3.png)![Solution](docs/testing/bugs/1/bug1-6.png)| FIXED|
+| 2  | B     | Edit books in the shopping cart | Logic. No limitation when editing items from the cart   | Go to the deployed app> Add an item to the checkout > Edit the quantity of the item to purchase to for example 100000 items > Observe the issue    | Cart not working as intended   ![Cart edit](docs/testing/bugs/2/bug2.png)                                      |Please ensure that cart has a limit of items that can be added| Added validation so the user can add a maximum quantity of 99| FIXED|
+| 3  | A     | Ratings - Admin panel | Logic. The admin can edit the reviews to more than 5  | Go to the deployed app> Go to the admin panel > Edit any user review to for example 63 > Observe the issue in the review being updated to more than 5      | The admin can edit reviews to an incorrect number               ![Error 505](docs/testing/bugs/3/bug3-1.png)                          |Please ensure that the rating feature works properly| Adding max/min to the models solved the issue and then when the user attempts to change a review to an amount greater than 5 it shows an error message ![Solution](docs/testing/bugs/3/bug3-2.png)| FIXED|
+| 4  | A     | No reverse match | Error no reverse match when trying to load the book details page | Go to the deployed app> click on books > books detail > Observe the issue with the page not loading    | No reverse match              ![No reverse match](docs/testing/bugs/4/bug4-2.png)  ![No reverse match](docs/testing/bugs/4/bug4-3.png)                         |Please ensure that the page loads properly| There was an inconsistency between id and book_id in the url path in comparison with the templates![Solution](docs/testing/bugs/4/bug4-1.png)| FIXED|
 
 
 ### Known Bugs
