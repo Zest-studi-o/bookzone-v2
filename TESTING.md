@@ -44,7 +44,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 #### Desktop Results
 
 ##### Home
-![Home Desktop](docs/testing/lighthouse/desktop/lh-home-desktop.jpg)<br><br>
+![Home Desktop](docs/testing/lh/lh-home.jpg)<br><br>
 
 ##### Books
 ![Books Desktop](docs/testing/lighthouse/desktop/lh-menu-desktop.png)<br><br>
