@@ -55,7 +55,6 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ##### Login
 ![Login Desktop](docs/testing/lighthouse/desktop/lh-login-desktop.jpg)<br><br>
 
-+*
 
 
 #### Mobile Results

@@ -120,7 +120,7 @@ I've decomposed my Epics into stories prior to prioritizing and implementing the
 The database schema shows the structure of the database, the type and their relationship. This schema was done using
 [Lucid Chart](https://www.lucidchart.com/)
 
-![Database Schema](docs/readme/P05-database-schema.jpg)
+![Database Schema](docs/readme/database-schema.png)
 
 ### Colour Palette
 The colour palette uses mainly black and white with some shades of grey, also used a shade of orange for the star and some buttons.
@@ -147,7 +147,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 ![Home](docs/readme/wf/P05-wf-home.png)
 
 - Books
-![Home](docs/readme/wf/P05-wf-books)
+![Books](docs/readme/wf/P05-wf-books.png)
 
 - Books Detail
 ![Home](docs/readme/wf/P05-wf-books-detail.png)
