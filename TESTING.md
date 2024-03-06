@@ -41,33 +41,8 @@ Some long line errors remained due to the impossibility of splitting up lines of
 
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
 
-#### Desktop Results
-
-##### Home
+Please see bellow the home page as an example:
 ![Home Desktop](docs/testing/lh/lh-home.jpg)<br><br>
-
-##### Books
-![Books Desktop](docs/testing/lighthouse/desktop/lh-menu-desktop.png)<br><br>
-
-##### Books Detail
-![Book detail Desktop](docs/testing/lighthouse/desktop/lh-signup-desktop.jpg)<br><br>
-
-##### Login
-![Blog Desktop](docs/testing/lighthouse/desktop/lh-login-desktop.jpg)<br><br>
-
-#### Mobile Results
-
-##### Home
-![Home Desktop](docs/testing/lighthouse/desktop/lh-home-desktop.jpg)<br><br>
-
-##### Books
-![Books Desktop](docs/testing/lighthouse/desktop/lh-menu-desktop.png)<br><br>
-
-##### Books Detail
-![Book detail Desktop](docs/testing/lighthouse/desktop/lh-signup-desktop.jpg)<br><br>
-
-##### Login
-![Blog Desktop](docs/testing/lighthouse/desktop/lh-login-desktop.jpg)<br><br>
 
 
 ---
@@ -79,8 +54,8 @@ I used [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to test styl
 ---
 ### W3 Html Validator
 
-I used [W3 Html Validator](https://validator.w3.org/) to test all html pages and found no issues
-![Jigsaw CSS Validator](docs/testing/css/css-jigsaw.jpg)
+I used [W3 Html Validator](https://validator.w3.org/) and found some minor errors, those could not get fixed due to time constrains, but they were mostly related to good practices and not fatal errors.
+![Jigsaw CSS Validator](docs/testing/html/html-validator.jpg)
 
 ---
 ## MANUAL TESTING
@@ -316,6 +291,7 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 ### Known Bugs
 
-- The shop now button sometimes disappears and then appear again
-- Delete book button for admin working sometimes
+- The shop now button sometimes disappears and then appears again
+- Delete edit delete book button for admin not working
 - In some pages the rating average have awkward display with more digits than normal
+- Some minor validation errors
