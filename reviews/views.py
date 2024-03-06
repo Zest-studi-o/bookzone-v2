@@ -19,7 +19,6 @@ class ReviewList(generic.ListView):
     """
 
     model = Review
-    #queryset = Review.objects.filter(status=1).order_by('-created_on')
     template_name = 'reviews/book-reviews.html'
     paginate_by = 6
 
@@ -87,24 +86,19 @@ def update_review(request, review_id):
         if request.method == 'POST':
             form = ReviewForm(request.POST, request.FILES, instance=review)
             if form.is_valid():
-                #review.status = 0
                 form.save()
                 messages.success(request, 'Successfully updated review!')  
-                #return redirect(reverse('reviews'))
+                
                 return redirect(reverse('book_detail', kwargs={'book_id': review.book.id}))
             else:
                 messages.error(request, 'Failed to update review. Please ensure the form is valid.')  
         else:
             form = ReviewForm(instance=review)
-            messages.info(request, f'You are updating {review.book}')
+            messages.info(request, f'You are updating: {review.book}')
     else:
         messages.error(request, 'Logged user is not the author of this review. Update request denied.') 
        
         return redirect(reverse('book_reviews', args=[review.book.id]))
-
-        # tutor example 2 return redirect(reverse('book_reviews', kwargs={'book_id': review.book.id}))
-
-        #redirect(reverse('update_review', kwargs={'book_id': review.book.id}))
 
     template = 'reviews/update_review.html'
     context = {
@@ -115,29 +109,10 @@ def update_review(request, review_id):
     return render(request, template, context)
 
 
-# class DeleteReview(LoginRequiredMixin, generic.DeleteView):
-#     """
-#     View that allows logged in users to delete a review.
-#     The user us prompted with a warning.
-#     """
-#     model = Review
-#     template_name = 'reviews/delete_review.html'
-
-#     def delete(self, request, *args, **kwargs):
-#         """
-#         Method to validate owner against logged in user.
-#         """
-#         review = self.get_object()
-#         if review.author != request.user:
-#             messages.error(self.request, 'You are not the author!')
-#             return redirect(reverse('book-reviews'))
-#         return super(DeleteReview, self).delete(request, *args, **kwargs)
-
-#     def get_success_url(self, *args, **kwargs):
-#         messages.success(self.request, 'You have deleted a review!')
-#         return reverse_lazy('book-reviews')
-
 class DeleteReview(LoginRequiredMixin, generic.DeleteView):
+    """ View to update a review """
+
+
     model = Review
     template_name = 'reviews/delete_review.html'
 

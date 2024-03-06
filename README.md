@@ -223,12 +223,22 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 ![User feedback](docs/readme/features/user-feedback.jpg)
 
-
-**Reviews**
+**Reviews ADMIN CRUD**
 
 - After purchasing a book the user can leave a review for the purchased item, and the admin has full CRUD functionality rights.
 
 ![User feedback](docs/readme/features/reviews.jpg)
+
+**Reviews USER CRUD**
+
+- After purchasing a book the user can leave a review for the purchased item.
+![Create](docs/readme/features/CRUD-create-review.jpg)
+
+
+- After leaving a review the user can update or delete it only if it is the author of the review.
+![Update Restricted](docs/readme/features/CRUD-update-review-prompt.jpg)
+![Update](docs/readme/features/CRUD-read-update-review.jpg)
+![Delete](docs/readme/features/CRUD-delete-review.jpg)
 
 ---
 

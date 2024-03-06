@@ -123,7 +123,7 @@ def update_post(request, slug):
                              'Please ensure the fields are correct.')
         else:
             form = PostForm(instance=post)
-            messages.info(request, f'You are updating {post.title}')
+            messages.info(request, f'You are updating: {post.title}')
 
         template = 'blog/post_edit.html'
         context = {
