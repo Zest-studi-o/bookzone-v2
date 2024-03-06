@@ -10,8 +10,6 @@ from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 from django.views.generic import CreateView
 from django.views import generic
-from django.urls import reverse_lazy
-
 
 class ReviewList(generic.ListView):
     """
@@ -91,7 +89,7 @@ def update_review(request, review_id):
                 form.save()
                 messages.success(request, 'Successfully updated review!')  
                 #return redirect(reverse('reviews'))
-                return redirect(reverse('book_detail', kwargs={'book_id': review.book.id}))
+                return redirect(reverse('book_reviews', args=[review.book.id]))
             else:
                 messages.error(request, 'Failed to update review. Please ensure the form is valid.')  
         else:
@@ -115,41 +113,24 @@ def update_review(request, review_id):
     return render(request, template, context)
 
 
-# class DeleteReview(LoginRequiredMixin, generic.DeleteView):
-#     """
-#     View that allows logged in users to delete a review.
-#     The user us prompted with a warning.
-#     """
-#     model = Review
-#     template_name = 'reviews/delete_review.html'
-
-#     def delete(self, request, *args, **kwargs):
-#         """
-#         Method to validate owner against logged in user.
-#         """
-#         review = self.get_object()
-#         if review.author != request.user:
-#             messages.error(self.request, 'You are not the author!')
-#             return redirect(reverse('book-reviews'))
-#         return super(DeleteReview, self).delete(request, *args, **kwargs)
-
-#     def get_success_url(self, *args, **kwargs):
-#         messages.success(self.request, 'You have deleted a review!')
-#         return reverse_lazy('book-reviews')
-
 class DeleteReview(LoginRequiredMixin, generic.DeleteView):
+    """
+    View that allows logged in users to delete a review.
+    The user us prompted with a warning.
+    """
     model = Review
     template_name = 'reviews/delete_review.html'
 
     def delete(self, request, *args, **kwargs):
+        """
+        Method to validate owner against logged in user.
+        """
         review = self.get_object()
-        if review.reviewer != request.user:
-            messages.error(self.request, 'You are not the author of this review!')
-            return redirect(reverse('book-reviews'))
+        if review.author != request.user:
+            messages.error(self.request, 'You are not the author!')
+            return redirect(reverse('reviews'))
         return super(DeleteReview, self).delete(request, *args, **kwargs)
 
-    def get_success_url(self):
-        review = self.get_object()
-        book_id = review.book.id 
+    def get_success_url(self, *args, **kwargs):
         messages.success(self.request, 'You have deleted a review!')
-        return reverse('book_detail', kwargs={'book_id': book_id})
+        return reverse_lazy('reviews')

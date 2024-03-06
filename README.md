@@ -209,7 +209,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 - The admin can create, read, update and delete books in the admin panel.
 
-![Delete bookings](docs/readme/features/admin-crud.jpg)
+![Delete books](docs/readme/features/admin-crud.jpg)
 
 **Allauth**
 

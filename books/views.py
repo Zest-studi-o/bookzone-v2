@@ -219,7 +219,7 @@ def delete_book(request, book_id):
     if not request.user.is_superuser:
         messages.error(
             request,
-            'Sorry, only adminss can do that.'
+            'Sorry, only admins can do that.'
         )
         return redirect(reverse('home'))
 
