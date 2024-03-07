@@ -293,4 +293,4 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 
 - The shop now button sometimes disappears and then appears again
 - In some pages the rating average have awkward display with more digits than normal
-- Some minor validation errors
+- Some minor html w3 validator errors

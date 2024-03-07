@@ -223,6 +223,9 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 ![User feedback](docs/readme/features/user-feedback.jpg)
 
+**Books ADMIN CRUD**
+![Books admin CRUD](docs/readme/features/CRUD-book-admin.png)
+
 **Reviews ADMIN CRUD**
 
 - After purchasing a book the user can leave a review for the purchased item, and the admin has full CRUD functionality rights.
@@ -353,8 +356,8 @@ In order to protect the django app secret key it was set as an environment varia
 5. Retrieve access key:
 
     - Select the user for whom you wish to create a CSV file.
-    -  Select the 'Security Credentials' tab
-    -  Scroll to 'Access Keys' and click 'Create access key'
+    - Select the 'Security Credentials' tab
+    - Scroll to 'Access Keys' and click 'Create access key'
     - Select 'Application running outside AWS', and click next
     - On the next screen, you can leave the 'Description tag value' blank. Click 'Create Access Key'
     - Click the 'Download .csv file' button
