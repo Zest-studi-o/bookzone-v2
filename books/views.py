@@ -213,44 +213,12 @@ def edit_book(request, book_id):
 
 @login_required
 def delete_book(request, book_id):
-    """
-    Delete a book
-    """
+    """ Delete a book from the store """
     if not request.user.is_superuser:
-        messages.error(
-            request,
-            'Sorry, only admins can do that.'
-        )
+        messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    if request.method == 'POST':
-        book_id = request.POST.get('book_id')
-        if book_id:
-            book = get_object_or_404(Book, pk=book_id)
-            book.delete()
-            messages.success(request, 'Book deleted successfully.')
-            return redirect('books')
-        else:
-            return HttpResponseBadRequest('Invalid request')
-    else:
-        return HttpResponseBadRequest('Invalid request')
-
-
-@login_required
-def admin_books(request):
-    """
-    View all books for administrators.
-    """
-    if not request.user.is_superuser:
-        messages.error(
-            request,
-            'Sorry, only administrators can access this page.'
-        )
-        return redirect(reverse('home'))
-
-    books = Book.objects.all()
-
-    context = {
-        'books': books
-    }
-    return render(request, 'books/admin_books.html', context)
+    book = get_object_or_404(Book, pk=book_id)
+    book.delete()
+    messages.success(request, 'Book deleted!')
+    return redirect(reverse('books'))

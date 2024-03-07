@@ -292,6 +292,5 @@ Comprehensive testing has been conducted to ensure that all website functionalit
 ### Known Bugs
 
 - The shop now button sometimes disappears and then appears again
-- Delete edit delete book button for admin not working
 - In some pages the rating average have awkward display with more digits than normal
 - Some minor validation errors

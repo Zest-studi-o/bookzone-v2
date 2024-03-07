@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_title %}Book Editor{% endblock %}
-
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -30,6 +28,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="book-details-container mb-5 mt-md-5">
+                <!-- If the user is an admin -->
                 {% if request.user.is_superuser %}
                     <div class="mt-4 d-flex justify-content-center">
                         <h3><strong>Admin Options</strong></h3> 
@@ -37,17 +36,13 @@
                     <div class="d-flex justify-content-center">
                         <p class="text-uppercase">{{user.username}} is currently logged in with administrator rights</p>   
                     </div>
-                    <div class="mt-2 d-flex justify-content-center">   
-                        <a href="{% url 'edit_book' book.id %}" class="btn btn-info mb-1 mt-4"><i class="fa-solid fa-pen-to-square pr-2" style="color: #ffffff;"></i> Edit {{ book.title }} <i class="fa-solid fa-pen-to-square pl-2" style="color: #ffffff;"></i></a>
-                    </div>
-                    <div class="mt-2 d-flex justify-content-center mb-4"> 
-                        <form id="delete-form-{{ book.id }}" action="{% url 'delete_book' book.id %}" method="POST">
-                            {% csrf_token %}
-                            <input type="hidden" name="book_id" value="{{ book.id }}">
-                            <a href="#"  class="btn btn-danger btn-block" onclick="confirmDelete(event, '{{ book.title }}', '{{ book.id }}')">Delete Book</a>
-                        </form>
-                    </div>
+
+                <!-- Admin update and delete books -->     
+                    <a href="{% url 'edit_book' book.id %}" class="btn btn-black mb-3" >Edit</a>
+                    <a class="btn btn-danger mb-3" href="{% url 'delete_book' book.id %}">Delete</a>
+                
                 {% endif %}
+                
                 <!-- Display book name -->
                 <p class="mb-0 text-black">{{ book.title }}</p>
                 <!-- Display book price -->

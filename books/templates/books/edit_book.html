@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-<!-- Edit book -->
-<div class="overlay"></div>
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -11,37 +9,34 @@
     </div>
 {% endblock %}
 
-<!-- To edit a book -->
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
             <hr>
-            <h2 class="logo-font mb-4">Book Management</h2>
-            <h5 class="text-muted">Edit a book</h5>
+            <h2 class="logo-font mb-4">Book Management - Edit</h2>
             <hr>
         </div>
     </div>
 
-<!-- Edit book container -->
-<div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
-            <!-- Edit book form -->
             <form method="POST" action="{% url 'edit_book' book.id %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ form | crispy }}
-
-                <div class="text-right mb-4">
-                       <!-- Go back button -->
-                    <a href="{% url 'blog'%}" class="btn btn-outline-black text-uppercase"><span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>Cancel</a>
-                    <a href="{% url 'book_reviews' book_id=book.id %}" class="btn text-uppercase color: #ffaa3b" style="background-color: #ffaa3b;">Update Book</a>
+                {% for field in form %}
+                    {% if field.name != 'image' %}
+                        {{ field | as_crispy_field }}
+                    {% else %}
+                        {{ field }}
+                    {% endif %}
+                {% endfor %}
+                <div class="text-right">
+                    <a class="btn btn-outline-black text-uppercase" href="{% url 'books' %}">Cancel</a>
+                    <button class="btn text-uppercase color: #ffaa3b" style="background-color: #ffaa3b;" type="submit">Update Book</button>
                 </div>
             </form>
-        </div>
+        </div>            
     </div>
 </div>
 {% endblock %}

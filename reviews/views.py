@@ -22,6 +22,7 @@ class ReviewList(generic.ListView):
     template_name = 'reviews/book-reviews.html'
     paginate_by = 6
 
+
 @login_required
 def book_reviews(request, book_id):
     """
@@ -38,17 +39,8 @@ def book_reviews(request, book_id):
         user_profile=user.userprofile,
         lineitems__book=book
     ).exists()
-    """
-    if existing_review:
-        messages.error(
-            request,
-            f'You have already review this book!'
-        )
-        return redirect('book_detail', book_id=book_id)
-    """
 
     reviews = book.reviews.all()
-    
 
     if has_ordered_book:
         if request.method == 'POST':
@@ -76,7 +68,6 @@ def book_reviews(request, book_id):
     return render(request, 'reviews/book_reviews.html', context)
 
 
-
 @login_required
 def update_review(request, review_id):
     """ View to update a review """
@@ -87,17 +78,17 @@ def update_review(request, review_id):
             form = ReviewForm(request.POST, request.FILES, instance=review)
             if form.is_valid():
                 form.save()
-                messages.success(request, 'Successfully updated review!')  
-                
+                messages.success(request, 'Successfully updated review!')
+
                 return redirect(reverse('book_detail', kwargs={'book_id': review.book.id}))
             else:
-                messages.error(request, 'Failed to update review. Please ensure the form is valid.')  
+                messages.error(request, 'Failed to update review. Please ensure the form is valid.')
         else:
             form = ReviewForm(instance=review)
             messages.info(request, f'You are updating: {review.book}')
     else:
-        messages.error(request, 'Logged user is not the author of this review. Update request denied.') 
-       
+        messages.error(request, 'Logged user is not the author of this review. Update request denied.')
+      
         return redirect(reverse('book_reviews', args=[review.book.id]))
 
     template = 'reviews/update_review.html'
@@ -112,7 +103,6 @@ def update_review(request, review_id):
 class DeleteReview(LoginRequiredMixin, generic.DeleteView):
     """ View to update a review """
 
-
     model = Review
     template_name = 'reviews/delete_review.html'
 
@@ -125,6 +115,6 @@ class DeleteReview(LoginRequiredMixin, generic.DeleteView):
 
     def get_success_url(self):
         review = self.get_object()
-        book_id = review.book.id 
+        book_id = review.book.id
         messages.success(self.request, 'You have deleted a review!')
         return reverse('book_detail', kwargs={'book_id': book_id})
