@@ -58,14 +58,13 @@
                         </div>
                         <hr>
                         <!-- Read more about that post -->
-                        <a href="{% url 'post_detail' post.slug %}" class="btn btn-outline-black text-uppercase mt-3">Read more<span class="icon">
+                        <a href="{% url 'post_detail' post.slug %}" class="btn btn-outline-black text-uppercase mt-0">Read more<span class="icon">
                             <i class="fas fa-chevron-right"></i>
                         </span></a>
+                        <!-- Superuser edit and delete -->
                         {% if request.user.is_superuser %}
-                            <small class="ml-3">
-                                <a href="{% url 'post_edit' post.slug %}">Edit</a> |
-                                <a class="text-danger" href="{% url 'post_delete' post.slug %}">Delete</a>
-                            </small>
+                                <a href="{% url 'post_edit' post.slug %}"class="btn btn-black mb-0">Edit</a>
+                                <a class="btn btn-danger mb-0" href="{% url 'post_delete' post.slug %}">Delete</a>
                         {% endif %}
                         <hr>
                     </div>
