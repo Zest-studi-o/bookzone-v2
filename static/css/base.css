@@ -30,13 +30,14 @@ body {
 }
 
 .custom-logo {
-    font-family: "DM Serif Display", serif;
+    font-family: "DM Serif Display", serif !important;
     font-weight: 400;
     font-style: normal;
 }
 
+/* Button styles */
 .shop-now-button {
-    background: black !important;
+    background: black;
     color: white;
     min-width: 260px;
 }
@@ -48,8 +49,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important;
-    /* use important to override link colors for <a> elements */
+    color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
