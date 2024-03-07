@@ -11,7 +11,8 @@ body {
     color: #555;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    font-style: normal
+    font-style: normal;
+    background-color: black;
 }
 
 .icon {
@@ -32,6 +33,12 @@ body {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.shop-now-button {
+    background: black !important;
+    color: white;
+    min-width: 260px;
 }
 
 .btn-black {

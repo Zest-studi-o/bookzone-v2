@@ -9,197 +9,202 @@
 
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/accounts/login/</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/bag/</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?sort=price&amp;direction=asc</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?sort=rating&amp;direction=asc</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?sort=category&amp;direction=asc</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=crime_fiction</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=cult_fiction</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=science_fiction</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=crime_fiction,cult_fiction,science_fiction</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=gardening</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=history</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=language</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=gardening,history,language</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=picture_books</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=early_reader</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=board_books</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=picture_books,early_reader,board_books</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mystery_box_cult_fiction</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mystery_box_mothers_day</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mystery_box_young_adult</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/?category=mystery_box_cult_fiction,mystery_box_mothers_day,mystery_box_young_adult</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/blog/</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/15</loc>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/5</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/8</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/1</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/7</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/2</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/3</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/1</loc>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/4</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/3</loc>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/6</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/12</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/11</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/10</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/books/9</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bookzone-dbc6fd65e384.herokuapp.com/blog/enjoy-bookzone-bookclub/</loc>
-  <lastmod>2024-03-06T23:16:18+00:00</lastmod>
+  <lastmod>2024-03-07T09:30:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
