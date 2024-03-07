@@ -199,15 +199,16 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 ![Books List](docs/readme/features/books-page.jpg)
 
-**User Crud**
+**Books User Crud**
 
 - The user can create, read, update and delete books in their shopping bag.
 
 ![User Crud](docs/readme/features/user-crud.jpg)
 
-**Admin Crud**
+**Books Admin Crud**
 
-- The admin can create, read, update and delete books in the admin panel.
+- The admin can create, read, update and delete books in the front end and admin panel.
+![Books admin CRUD](docs/readme/features/CRUD-book-admin.png)
 
 ![Delete books](docs/readme/features/admin-crud.jpg)
 
@@ -223,11 +224,10 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 ![User feedback](docs/readme/features/user-feedback.jpg)
 
-**Books ADMIN CRUD**
-![Books admin CRUD](docs/readme/features/CRUD-book-admin.png)
-
 **Reviews**
-- After purchasing a book the user can leave a review for the purchased item, the admin can Update and Delete through the admin panel 
+- After purchasing a book the user can leave a review for the purchased item with full CRUD functionality, the admin can Update and Delete reviews through the admin panel.
+
+
 ![User feedback](docs/readme/features/reviews.jpg)
 
 **Reviews USER CRUD**
