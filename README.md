@@ -226,10 +226,8 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 **Books ADMIN CRUD**
 ![Books admin CRUD](docs/readme/features/CRUD-book-admin.png)
 
-**Reviews ADMIN CRUD**
-
-- After purchasing a book the user can leave a review for the purchased item, and the admin has full CRUD functionality rights.
-
+**Reviews**
+- After purchasing a book the user can leave a review for the purchased item, the admin can Update and Delete through the admin panel 
 ![User feedback](docs/readme/features/reviews.jpg)
 
 **Reviews USER CRUD**
@@ -247,7 +245,7 @@ Wireframes for desktop, tablet and mobile versions are as follows:
 
 ### Features Left to Implement
 
-In the future, I would like to:
+Many ideas and features are lined up for this project, although they could not be implemented this time, in the future, I would like to:
 
 - Add a barcode scanner that can read the book iban and add it to the database.
 - I would like the app to allow users to also sell their second-hand books.
@@ -256,6 +254,7 @@ In the future, I would like to:
 - Add a currency convertor and different places to shop from.
 - Link to reviews from the purchased products profile panel.
 - Get more options and features in the profile sections.
+- Give the admin the possibility to edit and delete a review as well from the front end using the edit and delete buttons for the reviews app as already done for the books and blog apps.
 
 ---
 
