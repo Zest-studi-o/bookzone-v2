@@ -73,7 +73,7 @@ def update_review(request, review_id):
     """ View to update a review """
 
     review = get_object_or_404(Review, pk=review_id)
-    if review.reviewer == request.user:
+    if review.reviewer or user.is_superuser == request.user:
         if request.method == 'POST':
             form = ReviewForm(request.POST, request.FILES, instance=review)
             if form.is_valid():

@@ -66,8 +66,11 @@ class Category(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
+    """
+
     def __str__(self):
         return f'{self.book.title} sold to {self.buyer.username} on {self.date}'
 
     def __str__(self):
         return f'Review by {self.user.username} for {self.book.title}'
+    """

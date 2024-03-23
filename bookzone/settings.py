@@ -30,8 +30,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [
+    # original repo
     '8000-zeststudio-bookzone-k18d38paw1h.ws-eu108.gitpod.io',
     '8000-zeststudio-p05bookzone-goau5ijk38u.ws-eu108.gitpod.io',
+    # copy repo
+    '8000-zeststudio-bookzonev2-0g0go14k8xl.ws-eu110.gitpod.io',
     os.environ.get('HEROKU_HOSTNAME'),
     'localhost',
 ]
