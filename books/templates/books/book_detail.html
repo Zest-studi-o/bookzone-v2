@@ -220,20 +220,20 @@
         </div>
     </div>
 </div>
-    {% endblock %}
+{% endblock %}
 
 
 
-    {% block postloadjs %}
-    {{ block.super }}
-    <script>
-        function confirmDelete(event, bookName, bookId) {
-            event.preventDefault();
-            if (confirm(`Are you sure you want to delete ${bookName}?`)) {
-                document.getElementById(`delete-form-${bookId}`).submit();
-            }
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    function confirmDelete(event, bookName, bookId) {
+        event.preventDefault();
+        if (confirm(`Are you sure you want to delete ${bookName}?`)) {
+            document.getElementById(`delete-form-${bookId}`).submit();
         }
-    </script>
+    }
+</script>
 
-    {% include 'books/includes/quantity_input_script.html' %}
-    {% endblock %}
+{% include 'books/includes/quantity_input_script.html' %}
+{% endblock %}

@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -25,18 +25,19 @@
             <form method="POST" action="{% url 'edit_book' book.id %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
-                    {% if field.name != 'image' %}
-                        {{ field | as_crispy_field }}
-                    {% else %}
-                        {{ field }}
-                    {% endif %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
                 {% endfor %}
                 <div class="text-right">
                     <a class="btn btn-outline-black text-uppercase" href="{% url 'books' %}">Cancel</a>
-                    <button class="btn text-uppercase color: #ffaa3b" style="background-color: #ffaa3b;" type="submit">Update Book</button>
+                    <button class="btn text-uppercase color: #ffaa3b" style="background-color: #ffaa3b;"
+                        type="submit">Update Book</button>
                 </div>
             </form>
-        </div>            
+        </div>
     </div>
 </div>
 {% endblock %}
