@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     '8000-zeststudio-p05bookzone-goau5ijk38u.ws-eu108.gitpod.io',
     # copy repo
     '8000-zeststudio-bookzonev2-0g0go14k8xl.ws-eu110.gitpod.io',
+    '8000-zeststudio-bookzonev2-qy9xdnsovbk.ws-eu112.gitpod.io',
     os.environ.get('HEROKU_HOSTNAME'),
     'localhost',
 ]
