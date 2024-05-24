@@ -6,7 +6,7 @@ A clear bug description
 2. Click on ""
 3. Scroll down to ""
 4. Observe the issue
-
+<br>
 **Actual Result**
 Description of the actual issue
 
