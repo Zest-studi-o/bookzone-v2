@@ -6,8 +6,8 @@ A clear bug description
 2. Click on ""
 3. Scroll down to ""
 4. Observe the issue
-<br>
-**Actual Result**
+
+**Actual Result**<br>
 Description of the actual issue
 
 **Expected Result**
