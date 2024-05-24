@@ -1,4 +1,4 @@
-**Bug description**
+**Bug description**<br>
 A clear bug description
 
 **Steps to Reproduce**
@@ -10,12 +10,12 @@ A clear bug description
 **Actual Result**<br>
 Description of the actual issue
 
-**Expected Result**
+**Expected Result**<br>
 Description of what is expected to happen
 
-**Screenshoots**
+**Screenshoots**<br>
 Attach screenshoots here
 
-**Devices**
+**Devices**<br>
 Device or screen size affected by the issue
 
