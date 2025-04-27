@@ -1,4 +1,4 @@
-#!/Users/mariangelesrojomira/Desktop/CI/bookzone-v2/nuevo_entorno_311/bin/python3
+#!/Users/mariangelesrojomira/Desktop/CI/bookzone-v2/nuevo_entorno_311/bin/python3.9
 
 import sys
 import json
