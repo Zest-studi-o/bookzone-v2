@@ -1,0 +1,223 @@
+[
+{
+  "model": "books.book",
+  "pk": 1,
+  "fields": {
+    "sku": "pp01",
+    "isbn": "9781447294832",
+    "title": "A Little Life: Shortlisted for the Man Booker Prize 2015 (Picador Collection) [2016] paperback",
+    "author": "Hanya Yanagihara",
+    "description": "Shortlisted for the Booker Prize 2015.\r\nShortlisted for the Baileys Prize for Women's Fiction 2016 Winner of Fiction\r\nBook of the Year at the British Book Awards 2016 Finalist for the National Book Awards 2015\r\nThe million copy bestseller. \r\nWhen four graduates from a small Massachusetts college move to New York to make their way, they're broke, adrift, and buoyed only by their friendship and ambition. There is kind, handsome Willem, an aspiring actor; JB, a quick-witted, sometimes cruel Brooklyn-born painter seeking entry to the art world; Malcolm, a frustrated architect at a prominent firm; and withdrawn, brilliant, enigmatic Jude, who serves as their centre of gravity. \r\nOver the decades, their relationships deepen and darken, tinged by addiction, success, and pride. Yet their greatest challenge, each comes to realize, is Jude himself, by midlife a terrifyingly talented litigator yet an increasingly broken man, his mind and body scarred by an unspeakable childhood, and haunted by what he fears is a degree of trauma that he'll not only be unable to overcome - but that will define his life forever.",
+    "price": "9.99",
+    "condition": "New",
+    "category": 1,
+    "seller": 1,
+    "image": "a-little-life.jpg",
+    "upload_date": "2024-02-12T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 2,
+  "fields": {
+    "sku": "pp02",
+    "isbn": "2714537812307",
+    "title": "The Last to Disappear: a chilling and heart-pounding thriller perfect for winter nights [2022] paperback",
+    "author": "Jo Spain",
+    "description": "THE CHILLING NEW THRILLER FROM THE BESTSELLING AUTHOR OF THE PERFECT LIE\r\n \"Utterly ingenious\" - Liz Nugent \"Tense and atmospheric\" - Catherine Cooper\"Unforgettable!\" - Allie Reynolds\"Compelling\" - Sarah Pearse ********\r\nA luxury resort. Three missing women. One body.\r\n When young London professional Alex Evans is informed that...",
+    "price": "9.99",
+    "condition": "New",
+    "category": 2,
+    "seller": 1,
+    "image": "the-last-to-disappear.jpg",
+    "upload_date": "2024-02-12T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 3,
+  "fields": {
+    "sku": "pp03",
+    "isbn": "9780349437002",
+    "title": "Fourth Wing [2023] paperback",
+    "author": "Rebecca Yarros",
+    "description": "Dragons, war and Hunger Games-esque trials. Fourth Wing is a high-stakes, enemies-to-lovers fantasy romance perfect for fans of Leigh Bardugo, Sarah J Maas and dark academia.",
+    "price": "19.50",
+    "condition": "New",
+    "category": 3,
+    "seller": 1,
+    "image": "fourth-wing.jpg",
+    "upload_date": "2024-02-11T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 4,
+  "fields": {
+    "sku": "pp04",
+    "isbn": "9781529389418",
+    "title": "The Gardener's Almanac: A Treasury of Wisdom and Inspiration through the Year",
+    "author": "Alan Titchmarsh",
+    "description": "A beautifully packaged giftbook with illustrations by Alan himself.",
+    "price": "19.50",
+    "condition": "New",
+    "category": 4,
+    "seller": 1,
+    "image": "the-gardener-almanac.jpg",
+    "upload_date": "2024-02-11T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 5,
+  "fields": {
+    "sku": "pp05",
+    "isbn": "9781473691308",
+    "title": "On This Day in History [2019] paperback",
+    "author": "Dan Snow",
+    "description": "In this book Dan Snow shows us how each day offers a different and unexpected insight into our past. And story by gripping story, this year grows into a vivid, very human history of the world.",
+    "price": "5.99",
+    "condition": "New",
+    "category": 5,
+    "seller": 1,
+    "image": "on-this-day-in-history.jpg",
+    "upload_date": "2024-02-11T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 6,
+  "fields": {
+    "sku": "pp06",
+    "isbn": "9781444170962",
+    "title": "Insider's Spanish: Intermediate Conversation Course (Learn Spanish with the Michel Thomas Method): Book, Audio and Interactive Practice [2014]",
+    "author": "Michel Thomas & Jennifer Stanley-Smith",
+    "description": "Through authentic, lively conversations around engaging topics, and the unique Michel Thomas Method for learning, this course focuses on the colloquial language and conversation strategies used by native Spanish speakers so that you can fit in and communicate more naturally.",
+    "price": "19.99",
+    "condition": "New",
+    "category": 6,
+    "seller": 1,
+    "image": "spanish-conversation.jpg",
+    "upload_date": "2024-02-11T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 7,
+  "fields": {
+    "sku": "pp07",
+    "isbn": "9781788494410",
+    "title": "Fox & Son Tailers [2023] paperback",
+    "author": "Paddy Donnelly",
+    "description": "FOX & SONS - Makers of the Finest Traditional Tails for All Animals and Every Occasion!",
+    "price": "9.99",
+    "condition": "New",
+    "category": 7,
+    "seller": 1,
+    "image": "fox-son-tailers.jpg",
+    "upload_date": "2024-02-11T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 8,
+  "fields": {
+    "sku": "pp08",
+    "isbn": "9780192783721",
+    "title": "Mirabelle Takes Charge [2023] paperback",
+    "author": "Harriet Muncaster",
+    "description": "Mirabelle's mum is a witch, her dad is a fairy, and she is a bit of both!",
+    "price": "9.10",
+    "condition": "New",
+    "category": 8,
+    "seller": 1,
+    "image": "mirabelle-takes-charge.jpg",
+    "upload_date": "2024-02-11T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 9,
+  "fields": {
+    "sku": "pp09",
+    "isbn": "9781406387797",
+    "title": "I Want My Hat Back [2018]",
+    "author": "Jon Klassen",
+    "description": "Jon Klassen for the smallest hands! The very first HAT book in board book form.",
+    "price": "29.99",
+    "condition": "New",
+    "category": 9,
+    "seller": 1,
+    "image": "i-want-my-hat-back.jpeg",
+    "upload_date": "2024-02-11T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 10,
+  "fields": {
+    "sku": "pp10",
+    "isbn": "4563456789012",
+    "title": "Cult Fiction 6 Book Mystery Box - New Books",
+    "author": "Bookzone",
+    "description": "If you are looking for the Classics of Cult Fiction or want to experience something different this is the mystery box for you.",
+    "price": "29.99",
+    "condition": "New",
+    "category": 10,
+    "seller": 1,
+    "image": "cult-fiction-6-book-mystery-box.webp",
+    "upload_date": "2024-02-11T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 11,
+  "fields": {
+    "sku": "pp11",
+    "isbn": "3456745672098",
+    "title": "Books Mother's Day Mystery Box",
+    "author": "Bookzone",
+    "description": "Mother's Day Sunday March 19th, don't forget the MAMMY this mothering Sunday.",
+    "price": "29.99",
+    "condition": "New",
+    "category": 11,
+    "seller": 1,
+    "image": "mother-s-day-mystery-box.webp",
+    "upload_date": "2024-02-11T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 12,
+  "fields": {
+    "sku": "pp12",
+    "isbn": "8901234567345",
+    "title": "Books Young Adult Fiction 6 Book Mystery Box - New Books",
+    "author": "Bookzone",
+    "description": "Get 6 New Teen fiction books when you buy the Teen Fiction Mystery Box. It contains only new books.",
+    "price": "25.00",
+    "condition": "New",
+    "category": 12,
+    "seller": 1,
+    "image": "young-adult-fiction-6-book-mystery-box.webp",
+    "upload_date": "2024-02-11T00:00:00Z"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 13,
+  "fields": {
+    "sku": "pp13",
+    "isbn": "9781529351316",
+    "title": "Anna Jacobs: Silver Wishes [2023] paperback",
+    "author": "Anna Jacobs",
+    "description": "The first novel in the heartwarming and gripping new Jubilee Lake series, from million-copy bestseller Anna JacobsLancashire, 1895. When her controlling stepfather suddenly dies, it seems that Elinor Pendleton finally has a chance of freedom. But her hopes are soon dashed when...",
+    "price": "5.99",
+    "condition": "New",
+    "category": 2,
+    "seller": 1,
+    "image": "book_images/jacobs-anna.jpg",
+    "upload_date": "2025-04-29T21:45:18.102Z"
+  }
+}
+]

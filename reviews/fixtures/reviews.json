@@ -1,0 +1,158 @@
+[
+{
+  "model": "reviews.review",
+  "pk": 1,
+  "fields": {
+    "book": 10,
+    "reviewer": 1,
+    "order": null,
+    "rating": 1,
+    "content": "I hated the book, rubbish",
+    "date_created": "2025-04-29T22:01:48Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 2,
+  "fields": {
+    "book": 18,
+    "reviewer": 1,
+    "order": null,
+    "rating": 4,
+    "content": "Great book, I would recommend",
+    "date_created": "2025-04-29T22:02:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 3,
+  "fields": {
+    "book": 5,
+    "reviewer": 2,
+    "order": null,
+    "rating": 5,
+    "content": "Absolutely loved it!",
+    "date_created": "2025-04-29T22:03:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 4,
+  "fields": {
+    "book": 9,
+    "reviewer": 2,
+    "order": null,
+    "rating": 4,
+    "content": "My kids loved it",
+    "date_created": "2025-04-29T22:04:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 5,
+  "fields": {
+    "book": 11,
+    "reviewer": 1,
+    "order": null,
+    "rating": 3,
+    "content": "It was okay, not great.",
+    "date_created": "2025-04-29T22:05:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 6,
+  "fields": {
+    "book": 6,
+    "reviewer": 2,
+    "order": null,
+    "rating": 4,
+    "content": "Good read, would recommend.",
+    "date_created": "2025-04-29T22:06:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 7,
+  "fields": {
+    "book": 12,
+    "reviewer": 1,
+    "order": null,
+    "rating": 1,
+    "content": "Boring and predictable.",
+    "date_created": "2025-04-29T22:07:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 8,
+  "fields": {
+    "book": 3,
+    "reviewer": 2,
+    "order": null,
+    "rating": 4,
+    "content": "A pleasant surprise!",
+    "date_created": "2025-04-29T22:08:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 9,
+  "fields": {
+    "book": 8,
+    "reviewer": 1,
+    "order": null,
+    "rating": 2,
+    "content": "Could have been better.",
+    "date_created": "2025-04-29T22:09:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 10,
+  "fields": {
+    "book": 9,
+    "reviewer": 2,
+    "order": null,
+    "rating": 3,
+    "content": "Decent but forgettable. The raccoon is so evil that my children are scared",
+    "date_created": "2025-04-29T22:10:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 11,
+  "fields": {
+    "book": 1,
+    "reviewer": 1,
+    "order": null,
+    "rating": 5,
+    "content": "A masterpiece!",
+    "date_created": "2025-04-29T22:11:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 12,
+  "fields": {
+    "book": 2,
+    "reviewer": 2,
+    "order": null,
+    "rating": 2,
+    "content": "Slow and confusing.",
+    "date_created": "2025-04-29T22:12:00Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 13,
+  "fields": {
+    "book": 7,
+    "reviewer": 1,
+    "order": null,
+    "rating": 4,
+    "content": "Interesting perspective and well-written.",
+    "date_created": "2025-04-29T22:13:00Z"
+  }
+}
+]
