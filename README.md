@@ -4,7 +4,7 @@
 
 A web application that enables users to buy second-hand books.
 
-Visit the live site: [Bookzone](https://bookzone-dbc6fd65e384.herokuapp.com/)
+Visit the live site: [Bookzone](https://bookzone-v2.onrender.com/)
 
 # Table of contents
 
@@ -306,7 +306,7 @@ The main technologies used are Python, Javascript, html, css, Django & SQL
 
 [Django](https://www.djangoproject.com/) - Web Framework.
 
-[Elephantsql](https://www.elephantsql.com/) - PostgreSQL as a Service.
+[Elephantsql](https://www.elephantsql.com/) - Original PostgreSQL as a Service.
 
 [AWS](https://aws.amazon.com/) - For storing static data.
 
@@ -316,6 +316,9 @@ The main technologies used are Python, Javascript, html, css, Django & SQL
 
 [Sitemaps generator](www.xml-sitemaps.com)
 
+[Render](https://render.com) - To deploy the app (updated 2026).
+
+[Neon](https://neon.tech) - Serverless PostgreSQL database cloud service (updated 2026).
 ## Deployment & Local Development
 
 ### Deployment
@@ -324,29 +327,6 @@ The main technologies used are Python, Javascript, html, css, Django & SQL
 
 ####  Django
 In order to protect the django app secret key it was set as an environment variable and stored in env.py file
-
-####  Heroku
-1. Log in to [Heroku](https://id.heroku.com) or create an account
-2. Click “New”
-3. Click “Create new app”
-4. Give your app a name and select the region closest to you. When you’re done, click “Create app” to confirm
-5. Open the Settings tab and add the config vars
-
-####  ElephantSQL
-1. Log in to [ElephantSQL](https://www.elephantsql.com/) or create an account
-2. Click “Create New Instance”
-3. Set up your plan
- - Give your plan a Name (this is commonly the name of the project)
- - Select the Tiny Turtle (Free) plan
- - You can leave the Tags field blank
-4. Select “Select Region”
-5. Select a data center near you
-6. Then click “Review”
-7. Check your details are correct and then click “Create instance”
-8. Return to the ElephantSQL dashboard and click on the database instance name for this project
-9. In the URL section, click the copy icon to copy the database URL
-10. Paste this URL into env.py file as DATABASE_URL value and save the file.
-
 
 ####  AWS
 1. Log in to [AWS](https://aws.amazon.com/) or create an account
@@ -362,6 +342,33 @@ In order to protect the django app secret key it was set as an environment varia
     - Select 'Application running outside AWS', and click next
     - On the next screen, you can leave the 'Description tag value' blank. Click 'Create Access Key'
     - Click the 'Download .csv file' button
+
+ #### Render (Deployment)
+1. Log in to [Render](https://render.com) or create an account connecting your GitHub profile.
+2. Click the “New +” button in the top right corner and select “Web Service”.
+3. Connect your project's GitHub repository.
+4. Set up the basic configuration:
+   - **Name:** `bookzone-v2` (or your preferred application name).
+   - **Region:** Frankfurt (Europe) for optimal connection.
+   - **Runtime:** Python.
+   - **Instance Type:** Free (0$/month).
+5. Set up the required environment execution commands:
+   - **Build Command:** `pip install -r requirements.txt && mkdir -p staticfiles && python manage.py collectstatic --noinput`
+   - **Start Command:** `gunicorn bookzone.wsgi:application`
+6. Click on “Advanced” and add your environment variables securely in the Render Dashboard (`DATABASE_URL`, `SECRET_KEY`, `DEBUG`, etc.).
+7. Click “Create Web Service” to deploy your application live.
+
+#### Neon (PostgreSQL Database)
+1. Log in to [Neon](https://neon.tech) or create a free account.
+2. Create a new project for this application (e.g., `bookzone-db`) and select the region closest to you (Europe/Frankfurt).
+3. Once created, go to the Dashboard and navigate to the **Connection Details** section.
+4. Choose the **Pooled connection** string from the dropdown and select the **Python** or **URI** format.
+5. Check the "Show password" box and copy the full connection string starting with `postgresql://...`
+6. Save this connection string inside your local `.env` file as the `DATABASE_URL` value, and add it securely to your Render Environment Variables.
+
+#### Stripe & Email Setup
+1. Add your Stripe API credentials (`STRIPE_PUBLIC_KEY`, `STRIPE_SECRET_KEY`, and `STRIPE_WH_SECRET`) to your local `.env` file and Render Environment Variables to enable secure checkout processing.
+2. Configure your SMTP Email backend variables (`EMAIL_HOST_USER` and `EMAIL_HOST_PASSWORD`) to handle customer notifications and order confirmations.
 
 
 ### Local Development
