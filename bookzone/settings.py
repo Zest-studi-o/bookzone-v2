@@ -194,6 +194,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
@@ -217,6 +218,7 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 # Auto config: if it does not detect AWS it will use the free mode
+# Auto config: if it does not detect AWS it will use the free mode
 if 'AWS_ACCESS_KEY_ID' in os.environ and os.environ.get('USE_AWS') == 'True':
     AWS_STORAGE_BUCKET_NAME = 'bookzone-dbc6fd65e384'
     AWS_S3_REGION_NAME = 'eu-west-1'
@@ -232,14 +234,13 @@ if 'AWS_ACCESS_KEY_ID' in os.environ and os.environ.get('USE_AWS') == 'True':
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 else:
-    # For Render
     STORAGES = {
         "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
-        "staticfiles": {"BACKEND": "whitenoise.storage.StaticFilesStorage"},
+        "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage"},
     }
-    # Aseguramos que en local/Render gratuito use las rutas normales sin Amazon
     STATIC_URL = '/static/'
     MEDIA_URL = '/media/'
+
 
 # Email
 if 'DEVELOPMENT' in os.environ:
