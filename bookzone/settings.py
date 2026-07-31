@@ -70,6 +70,7 @@ INSTALLED_APPS = [
 
     # Other
     'jquery',
+    'crispy_bootstrap5',
     'crispy_forms',
     'storages',
     'django_summernote',
@@ -88,7 +89,8 @@ MIDDLEWARE = [
 
 ]
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 
 ROOT_URLCONF = 'bookzone.urls'
 
