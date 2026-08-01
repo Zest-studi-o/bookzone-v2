@@ -22,7 +22,7 @@ class Book(models.Model):
     # New, Like New, Good, Acceptable
     category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True, blank=True)
     seller = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='books_for_sale')
-    image = models.ImageField(upload_to='book_images/', blank=True, null=True)
+    image = models.ImageField(upload_to='', blank=True, null=True)
     upload_date = models.DateTimeField(auto_now_add=True)
 
     def calculate_average_rating(self):
